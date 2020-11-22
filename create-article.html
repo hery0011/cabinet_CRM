@@ -1,0 +1,68 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CRM</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+	<body>
+		
+
+		<section>
+			<div class="container">
+				<h2 class="title text-center">Formulaire de création d’article</h2>
+				<hr class="separator">
+				<form method="post" action="insert-article.php" enctype="multipart/form-data">
+					<div class="form-group">
+		              <label>Titre</label>
+		              <input type="text" class="form-control" name="titre">
+		            </div>
+
+		            <div class="form-group">
+		              <label>Date de publication</label>
+		              <input type="date" class="form-control" name="date">
+		            </div>
+
+		            <div class="form-group">
+		              <label>image</label>
+		              <input type="file" class="form-control" name="file">
+		            </div>
+
+		            <div class="form-group">
+		              <label>Contenu</label>
+		              <textarea class="form-control" rows="5" name="contenu">
+  						</textarea>
+		            </div>
+
+		            <div class="form-group">
+		              <label>Signature (auteur)</label>
+		              <input type="text" class="form-control" name="signature">
+		            </div>
+
+		            <div class="btn-wrap text-center">
+		            	<button class="btn btn-primary" type="submit">Soumettre</button>
+		            	<a href="index.html" class="btn btn-danger">Annuler</a>
+		            </div>
+				</form>
+			</div>
+		</section>
+
+		
+		
+		<script src="js/jquery-3.5.1.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+		</body>
+</html>

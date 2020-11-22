@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CRM</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<!-- NAVBAR -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<header id="head" class="">
+					<div class="container">
+						<div class="navbar-head">
+							
+									<div class="navbar-logo">
+										<a href="index.html"><img src="img/Logo.png"></a>
+									</div>
+
+									<div class="toggle-menu">
+										<div class="hamburger">
+											<i class="fas fa-bars"></i>
+										</div>	
+									</div>
+									
+									<div class="navbar-menu">
+										<ul class="navbar-menu-list">
+											<li class="navbar-menu-item contain pullUpDown"><a class="log-btn1" href="index.html" class="active">Accueil</a></li>						
+											<li class="navbar-menu-item contain dropdown pullUpDown">
+												<a class="log-btn1" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Le Cabinet </a>
+												<ul class="sub_menu sub1 dropdown-menu" aria-labelledby="dropdownMenuButton">
+													<li><a href="cabinet_qui_sommes_nous.html">Qui sommes-nous ?</a></li>
+													<li><a href="cabinet_valeurs.html">Nos valeurs</a></li>
+													<li><a href="cabinet_missions.html">Nos missions</a></li>
+												</ul>
+											</li>
+											<li class="navbar-menu-item contain dropdown pullUpDown">
+												<a class="log-btn1" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nos Services</a>
+												<ul class="sub_menu sub2 dropdown-menu">
+													<li><a href="service_expertise.html">Expertise comptable</a></li>
+													<li><a href="service_audit.html">Audit</a></li>
+													<li><a href="service_fiscalité.html">Fiscalité</a></li>
+													<li><a href="service_investisseur.html">Assistance aux investisseurs</a></li>
+													<li><a href="service_conseil.html">Assistance et conseil en gestion</a></li>
+												</ul>
+											</li>
+											<li class="navbar-menu-item contain pullUpDown"><a class="log-btn1" href="devis.html">Devis</a></li>
+											<li class="navbar-menu-item contain pullUpDown"><a class="log-btn1" href="actualite.html">Actualités</a></li>
+											<li class="navbar-menu-item contain pullUpDown"><a class="log-btn1" href="contact.html">Contact</a></li>
+										</ul>
+									</div>
+
+									<div class="sign-in-btn">
+										<a href="log_in.html"><i class="fas fa-sign-in-alt"></i></a>
+									</div>
+							
+						</div>
+					</div>
+				</header>
+			</div>
+		</div>
+	</div>
+	<!-- NAVBAR -->
+
+	<section id="banner" class="banner-devis">
+		<div class="container">
+			<div class="inner-banner"></div>
+		</div>
+	</section>
+	
+	<!-- BODY -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				
+				<section id="form-devis">
+			<div class="container">
+				<div class="Intro text-center">
+					<h2 class="title"><b>Demander <span style="color:#4997d1; font-family: 'Poppins'; ">un devis</span></b></h2>
+					<hr class="separator">
+					<p class=""  style="font-family: Playfair Display;">
+							Confiez-nous vos opérations comptables, fiscales et financières.
+					</p>
+				</div>
+				<form>
+					<div class="form-devis">
+						
+					<div class="row">
+							<div class="col-md-6" data-wow-delay="50ms">
+								<h3 class="title">Formulaire de demande de devis</h3>
+					             <div class="form-group">
+					             	<label style="color: #000;"><strong>Votre demande porte sur : *</strong></label>
+					              	<div class="form-check">
+									  <label class="form-check-label">
+									    <input type="checkbox" class="form-check-input" value="">Comptabilité
+									  </label>
+									  <label class="form-check-label">
+									    <input type="checkbox" class="form-check-input" value="">Audit
+									  </label>
+									  <label class="form-check-label">
+									    <input type="checkbox" class="form-check-input" value="">Fiscalité
+									  </label>
+									  <label class="form-check-label">
+									    <input type="checkbox" class="form-check-input" value="">Création d'entreprise
+									  </label>
+									  <label class="form-check-label">
+									    <input type="checkbox" class="form-check-input" value="">Gestion de la paie
+									  </label>
+									  <label class="form-check-label">
+									    <input type="checkbox" class="form-check-input" value="">Finance
+									  </label>
+									  <label class="form-check-label">
+									    <input type="checkbox" class="form-check-input" value="">Autres
+									  </label>
+									</div> 
+					             </div>  
+
+					            <div class="form-group">
+					              <label style="color: #000;"><strong>Combien de salariés avez-vous? *</strong></label>
+
+					              	<div class="form-check">
+									  <label class="form-check-label">
+									    <input type="radio" class="form-check-input" name="optradio">Aucun
+									  </label>
+									  <label class="form-check-label">
+									    <input type="radio" class="form-check-input" name="optradio">De 1 à 5
+									  </label>
+									  <label class="form-check-label">
+									    <input type="radio" class="form-check-input" name="optradio">De 6 à 30
+									  </label>
+									  <label class="form-check-label">
+									    <input type="radio" class="form-check-input" name="optradio">De 30 à 100
+									  </label>
+									  <label class="form-check-label">
+									    <input type="radio" class="form-check-input" name="optradio">Plus de 100
+									  </label>
+									</div>
+					            </div>
+					            <div class="form-group">
+					              <label style="color: #000;"><strong>Quel est votre chiffre d'affaires annuel ?</strong></label>
+
+					              	<div class="form-check">
+									  <label class="form-check-label">
+									    <input type="radio" class="form-check-input" name="optradio">Moins de 100 000 000 MGA
+									  </label>
+									  <label class="form-check-label">
+									    <input type="radio" class="form-check-input" name="optradio">Entre 100 000 000 MGA et 200 000 000 MGA
+									  </label>
+									  <label class="form-check-label">
+									    <input type="radio" class="form-check-input" name="optradio">Plus de 200 000 000 MGA
+									  </label>
+									</div>
+					            </div>
+					            <div class="form-group">
+					              <label style="color: #000;"><strong>Avez-vous déjà un expert-comptable? *</strong></label>
+
+					              	<div class="form-check">
+									  <label class="form-check-label">
+									    <input type="radio" class="form-check-input" name="optradio">Oui
+									  </label>
+									  <label class="form-check-label">
+									    <input type="radio" class="form-check-input" name="optradio">Non
+									  </label>
+									</div>
+					            </div>
+
+					            <div class="form-group">
+					              <label style="color: #000;"><strong>Quelle est la forme juridique de votre société?</strong></label>
+					              <i class="fa fa-chevron-down"></i>
+					              <select class="form-control">
+					                <option>- Sélectionner - </option>
+					                <option>Entreprise individuelle</option>
+					                <option> SARLU</option>
+					                <option>SARL</option>
+					                <option>SA</option>
+					                <option>Autres</option>
+					              </select>
+					            </div>
+
+					            <div class="form-group">
+					            	<label style="color: #000;"><strong>Comment avez-vous connu CRM?</strong></label>
+					              <i class="fa fa-chevron-down"></i>
+					              <select class="form-control">
+					                <option>- Sélectionner - </option>
+					                <option>Recherche sur Internet</option>
+					                <option>Sur recommandation</option>
+					                <option>Autres</option>
+					              </select>
+					            </div>
+						</div>
+						
+						
+							<div class="col-md-6" data-wow-delay="50ms">
+								<h3 class="title">Informations personnelles</h3>
+								<div class="form-group">
+					              <label>Nom</label>
+					              <input type="text" class="form-control" placeholder="">
+					              <label>Prénom</label>
+					              <input type="text" class="form-control" placeholder="">
+					              <label>Entreprise</label>
+					              <input type="text" class="form-control" placeholder="">
+					            </div>
+
+					            <div class="form-group">
+					              <label style="color: #000;"><strong>Secteur d'activité *</strong></label>
+					              <i class="fa fa-chevron-down"></i>
+					              <select class="form-control">
+					                <option>- Sélectionner - </option>
+					                <option>Artisan / commerçant</option>
+					                <option>Banque / assurance </option>
+					                <option>Association</option>
+					                <option>Entreprise de services </option>
+					                <option>Industrie</option>
+					                <option>Professionnel libéral </option>
+					                <option>Santé / hôpitaux / clinique </option>
+					                <option>Autres</option>
+					              </select>
+					            </div>
+
+					            <div class="form-group">
+					              <label>Email</label>
+					              <input type="email" class="form-control">
+					            </div>
+					            <div class="form-group"> 
+					              <label>Téléphone</label>
+					              <input type="number" class="form-control">
+					            </div>
+					            <div class="form-group"> 
+					              <label>Ville</label>
+					              <input type="text" class="form-control">
+					            </div>
+					            <div class="form-group">  
+					              <label>Code postal</label>
+					              <input type="number" class="form-control">
+					            </div>
+					         </div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="devis-msg">
+								<div class="form-group">
+					              <label>Message</label>
+					              <textarea class="form-control" rows="5">
+		      						</textarea>
+					            </div>
+							</div>
+							<div class="form-check">
+									  <label class="form-check-label">
+									    <input type="checkbox" class="form-check-input" name="optradio">En soumettant ce devis, j'accepte que les informations saisies soient exploitées dans le cadre de la demande						
+												de devis et de la relation commerciale qui peut en découler.
+									  </label>
+							</div>
+							<div class="form-group text-center">
+								<input type="submit" class="btn btn-post" value="ENVOYER LE FORMULAIRE">
+							</div>
+					</div>
+				</div>
+
+				</form>
+			</div>
+		</section>
+
+			</div>
+		</div>
+	</div>
+	<!-- BODY -->
+
+	<!-- FOOTER -->
+	<div class="container-fluid">
+		<div class="row" style="background-color: #e0dede;">
+			<div class="col-md-12">
+				<footer id="footer">
+					<div class="container">
+						<div class="row">
+
+		                    <div class=" col-md-4 ">
+		                        <div class="footer_widget">
+		                            <h3 class="footer_title">
+		                               <strong>Liens utiles</strong> 
+		                            </h3>
+		                            <ul>
+		                                </i><li><a target="_blank" href="https://edbm.mg/?lang=fr">EDBM</a></li>
+		                                <li><a target="_blank" href="http://www.impots.mg/">DGI</a></li>
+		                                <li><a target="_blank" href="http://www.oecfm.mg/">OECFM</a></li>
+		                            </ul>
+		                        </div>
+		                    </div>
+
+		                    <div class=" col-md-4 ">
+		                        <div class="footer_widget">
+		                            <h3 class="footer_title">
+		                                <strong>Documentations</strong>
+		                            </h3>
+		                            <ul>
+		                                <li><a target="_blank" href="https://edbm.mg/sitemap/main-doeuvre/?lang=fr"><i class="fa fa-download"></i> Travail</a></li>
+		                                <li><a target="_blank" href="https://edbm.mg/sitemap/commerce/?lang=fr"><i class="fa fa-download"></i> Commerce</a></li>
+		                                <li><a target="_blank" href="https://edbm.mg/sitemap/lois-sur-les-societes/?lang=fr"><i class="fa fa-download"></i> Lois sur les sociétés</a></li>
+		                            </ul>
+		                        </div>
+		                    </div>
+
+		                    <div class=" col-md-4">
+		                        <div class="footer_widget">
+		                            <p>
+		                               CRM – Cabinet de Comptabilité, Audit & Conseil
+		                               <br>
+		                               <i class="fa fa-map-marker-alt"></i> Lot II M 92 Antsakaviro <br>
+		                               <i class="fa fa-phone-alt"></i> <a target="_blank" href="+261 34 65 459 75">+261 34 65 459 75</a>
+		                            </p>
+		                            <div class="socail_links">
+		                                <p>Nous suivre : </p>
+		                                <a target="_blank" href="web.facebook.com">
+		                                    <i class="fab fa-facebook-f"></i>
+		                                </a>
+		                                <a target="_blank" href="fr.linkedin.com">
+		                                    <i class="fab fa-linkedin-in"></i>
+		                                </a>
+		                            </div>
+		                        </div>
+		                    </div>
+
+						</div>
+
+						<div class="cp-right">
+							<div class="rights">
+								<p>
+								Copyright ©2020 All rights reserved <br>
+								| Made with passion by <a target="_blank" href="https://www.dev-inbox.com/">www.dev-inbox.com</a>
+							</p>
+							<p>
+								<a href="">Privacy Policy</a> & <a href="">Term of Use</a>
+							</p>
+							</div>
+							<div class="social-link">
+								<a target="_blank" href="https://web.facebook.com/Devinbox-112170117151430/?">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							<a target="_blank" href="https://www.linkedin.com/company/49147337/">
+								<i class="fab fa-linkedin-in"></i>
+							</a>
+							</div>
+						</div>	
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div>
+	<!-- FOOTER -->
+
+	<!-- JAVASCRIPT -->
+	<script src="js/jquery-3.5.1.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/main.js"></script>
+    <script src="js/aos.js"></script>
+
+</body>
+</html>
