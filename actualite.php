@@ -1,3 +1,14 @@
+<?php 
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "cabinet_audit";
+
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+if (!$conn) {
+die("Connection failed: " . mysqli_connect_error());
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -55,8 +66,8 @@
 												</ul>
 											</li>
 											<li class="navbar-menu-item contain pullUpDown"><a class="log-btn1" href="devis.html">Devis</a></li>
-											<li class="navbar-menu-item contain pullUpDown"><a class="log-btn1" href="actualite.html">Actualités</a></li>
-											<li class="navbar-menu-item contain pullUpDown"><a class="log-btn1" href="contact.html">Contact</a></li>
+											<li class="navbar-menu-item contain pullUpDown"><a class="log-btn1" href="actualite.php">Actualités</a></li>
+											<li class="navbar-menu-item contain pullUpDown"><a class="log-btn1" href="contact.php">Contact</a></li>
 										</ul>
 									</div>
 
@@ -87,13 +98,26 @@
 								<p class="">
 									Vous décrouvrez ici toutes les informations nous concernant. Nous partageons des conseils et astuces pour vous accompagner dans vos projets.
 								</p>
-
 								<h2 class="title"><b>Historique</b></h2>
 
 								<div class="check-filter"> 
 					              <ul>
-					              	<li class=""><a href="">Articles récents</a></li>
-					              	<li class=""><a href="">Tous les articles</a></li>
+
+								<?php 
+
+									$sql = "SELECT titre_art FROM article ORDER BY id_art ASC";
+									$result = mysqli_query($conn, $sql);
+									
+									if ($result->num_rows > 0) {
+								    while($row = $result->fetch_assoc()) {
+								 ?>
+
+								
+					              	<li class=""><a href=""><?php echo $row['titre_art']; ?></a></li>
+					              	<?php 
+							              }
+							          }
+					              	 ?>
 					              </ul>
 					          </div>
 							</div>
@@ -102,26 +126,30 @@
 					<div class="col-md-9">
 						<section id="post">
 							<div class="container">
-								
 								<section id="post">
 									<div class="container">
+
+									<?php 
+
+										$sql = "SELECT * FROM article ORDER BY id_art DESC LIMIT 3";
+										$result = mysqli_query($conn, $sql);
+										if ($result->num_rows > 0) {
+										while($row = $result->fetch_assoc()) {
+									?>
 										<div class="post-content">
 											<div class="row">
 												<div class="col-md-4">
 													<div class="post-image">
-														<img src="img/1.jpg">
+														<img src="<?php echo $row['image_art'] ?>">
 													</div>
 												</div>
 												<div class="col-md-8">
 													<div class="post-detail">
-														<h2>Lorem ipsum dolor sit amet</h2>
+														<h2><?php echo $row['titre_art']; ?></h2>
 														<p>
-															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-															tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-															quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-															consequat.
+															<?php echo $row['contenu_art']; ?>
 														</p>
-														<a href="article.html">
+														<a href="article.php?id=<?php echo $row['id_art']; ?>">
 															<div class="post-btn">
 																<button class="btn btn-post float-right">En savoir plus</button>
 															</div>
@@ -131,69 +159,10 @@
 											</div>
 										</div>
 
-										<div class="post-content" >
-											<div class="row">
-												<div class="col-md-4">
-													<div class="post-image">
-														<img src="img/1.jpg">
-													</div>
-												</div>
-												<div class="col-md-8">
-													<div class="post-detail">
-														<h2>Lorem ipsum dolor sit amet</h2>
-														<p>
-															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-															tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-															quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-															consequat.
-														</p>
-														<a href="article.html">
-															<div class="post-btn">
-																<button class="btn btn-post float-right">En savoir plus</button>
-															</div>
-														</a>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="post-content">
-											<div class="row">
-												<div class="col-md-4">
-													<div class="post-image">
-														<img src="img/1.jpg">
-													</div>
-												</div>
-												<div class="col-md-8">
-													<div class="post-detail">
-														<h2>Lorem ipsum dolor sit amet</h2>
-														<p>
-															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-															tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-															quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-															consequat.
-														</p>
-														<a href="article.html">
-															<div class="post-btn">
-																<button class="btn btn-post float-right">En savoir plus</button>
-															</div>
-														</a>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="post-pagination">
-											<nav aria-label="nav-pagination">
-											  <ul class="pagination">
-											    <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-											    <li class="page-item"><a class="page-link" href="#">1</a></li>
-											    <li class="page-item"><a class="page-link" href="#">2</a></li>
-											    <li class="page-item"><a class="page-link" href="#">3</a></li>
-											    <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-											  </ul>
-											</nav>
-										</div>
+											<?php 
+													}
+												}
+											 ?>
 									</div>
 								</section>
 

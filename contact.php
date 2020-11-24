@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/sweetalert2.all.js"></script>
+  	<script type="text/javascript" src="js/sweetalert2.all.min.js"></script>
 </head>
 <body>
 
@@ -36,17 +38,17 @@
 									<div class="navbar-menu">
 										<ul class="navbar-menu-list">
 											<li class="navbar-menu-item contain pullUpDown"><a class="log-btn1" href="index.html" class="active">Accueil</a></li>						
-											<li class="navbar-menu-item contain pullUpDown nav-drop-menu">
-												<a class="log-btn1" href="cabinet_qui_sommes_nous.html">Le Cabinet </a>
-												<ul class="sub_menu">
+											<li class="navbar-menu-item contain dropdown pullUpDown">
+												<a class="log-btn1" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Le Cabinet </a>
+												<ul class="sub_menu sub1 dropdown-menu" aria-labelledby="dropdownMenuButton">
 													<li><a href="cabinet_qui_sommes_nous.html">Qui sommes-nous ?</a></li>
 													<li><a href="cabinet_valeurs.html">Nos valeurs</a></li>
 													<li><a href="cabinet_missions.html">Nos missions</a></li>
 												</ul>
 											</li>
-											<li class="navbar-menu-item contain pullUpDown nav-drop-menu">
-												<a class="log-btn1" href="service_expertise.html">Nos Services</a>
-												<ul class="sub_menu">
+											<li class="navbar-menu-item contain dropdown pullUpDown">
+												<a class="log-btn1" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nos Services</a>
+												<ul class="sub_menu sub2 dropdown-menu">
 													<li><a href="service_expertise.html">Expertise comptable</a></li>
 													<li><a href="service_audit.html">Audit</a></li>
 													<li><a href="service_fiscalité.html">Fiscalité</a></li>
@@ -55,8 +57,8 @@
 												</ul>
 											</li>
 											<li class="navbar-menu-item contain pullUpDown"><a class="log-btn1" href="devis.html">Devis</a></li>
-											<li class="navbar-menu-item contain pullUpDown"><a class="log-btn1" href="actualite.html">Actualités</a></li>
-											<li class="navbar-menu-item contain pullUpDown"><a class="log-btn1" href="contact.html">Contact</a></li>
+											<li class="navbar-menu-item contain pullUpDown"><a class="log-btn1" href="actualite.php">Actualités</a></li>
+											<li class="navbar-menu-item contain pullUpDown"><a class="log-btn1" href="contact.php">Contact</a></li>
 										</ul>
 									</div>
 
@@ -71,83 +73,78 @@
 		</div>
 	</div>
 	<!-- NAVBAR -->
+	
+
+	<section id="banner" class="banner-contact">
+		<div class="container">
+			<div class="inner-banner"></div>
+		</div>
+	</section>
+	
+
 
 	<!-- BODY -->
 	<div class="container-fluid">
-		
-				<div class="row">
-					<div class="col-md-3">
-						<aside id="filter">
-							<h2 class="title"><b>Restez <span style="color:#4997d1; ">informé</span></b></h2>
-							<div class="actu-filter">
-								<p class="">
-									Vous décrouvrez ici toutes les informations nous concernant. Nous partageons des conseils et astuces pour vous accompagner dans vos projets.
+		<div class="row">
+			<div class="col-md-12">
+
+				<section id="contact">
+					<div class="container">
+						<div class="form-contact">
+							<div class="form-contact-title text-center">
+								<h2 class="title"><b>Une question ? <span style="color:#4997d1; font-family: 'Poppins'; ">Un besoin ?</span> Un conseil ?</b></h2>
+								<p class="wow"  style="font-family: Playfair Display;">
+									Merci de remplir ce formulaire.
 								</p>
-
-								<h2 class="title"><b>Historique</b></h2>
-
-								<div class="check-filter"> 
-					              <ul>
-					              	<li class=""><a href="">Articles récents</a></li>
-					              	<li class=""><a href="">Tous les articles</a></li>
-					              </ul>
-					          </div>
 							</div>
-						</aside>
-					</div>
-					<div class="col-md-9">
-						<section id="post">
-							<div class="container">
-								<h2 class="title text-center">Lorem ipsum dolor sit amet</h2>
-								<hr class="separator">
-								<div class="text-center">
-									<div class="article-img wow zoomIn">
-									<img src="img/1.jpg">
+							<form method="post" action="contact.php">
+								<div class="row pb-3" >
+									<div class="col-md-6">
+											<div class="form-group">
+								              <label>Nom*</label>
+								              <input type="text" class="form-control" name="nom">
+								            </div>
 
-										<div class="article-info">
-											<span><i class="fa fa-user"></i>&nbsp;&nbsp;Admin</span>
-											<span><i class="fa fa-calendar"></i>&nbsp;&nbsp;november 10 2020</span>
-										</div>
+								            <div class="form-group">
+								              <label>Email*</label>
+								              <input type="email" class="form-control" name="mail">
+								            </div>
+
+								            <div class="form-group">
+								              <label>Objet*</label>
+								              <input type="text" class="form-control" name="objet">
+								            </div>
 									</div>
-									<div class="article-content">
-										<p class="wow fadeInUp text-justify">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-											consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-											cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-											proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-										</p>
-										<p class="wow fadeInUp text-justify">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-											consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-											cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-											proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-										</p>
-										<p class="wow fadeInUp text-justify">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-											consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-											cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-											proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-										</p>
-
-										<span class="signature text-left wow fadeInUp text-justify">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor incididunt ut labore et dolore magna aliqua
-										</span>
+									<div class="col-md-6">
+										<div class="form-group">
+							              <label>Message*</label>
+							              <textarea class="form-control" rows="7" name="message"></textarea>
+							            </div>
+										<center><input type="submit" class="btn btn-post" value="ENVOYER LE MESSAGE"></center>
 									</div>
 								</div>
-								
-							</div>
-						</section>
-					</div>
-				</div>
+							</form>
+						</div>
 
-			
+						<div class="row">
+							<div class="col-md-12">
+								<div class="maps">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1887.2143978213194!2d47.534448255669226!3d-18.912405187181978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f07d235e3b515f%3A0x7ecd70c7550e744a!2sRedZone%20Antsakaviro!5e0!3m2!1sen!2smg!4v1605988931504!5m2!1sen!2smg" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+									<div class="adress">
+										<ul>
+											<li><b>Raison sociale : </b>CRM COMPTABILITE, AUDIT & CONSEIL SARLU</li>
+											<li><b>Siège social : </b>Lot II M 92 Antsakaviro</li>
+											<li><b>Téléphone : </b>+ 261 34 65 459 75</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+		</div>
 	</div>
 	<!-- BODY -->
 
@@ -191,14 +188,14 @@
 		                               CRM – Cabinet de Comptabilité, Audit & Conseil
 		                               <br>
 		                               <i class="fa fa-map-marker-alt"></i> Lot II M 92 Antsakaviro <br>
-		                               <i class="fa fa-phone-alt"></i> +261 34 65 459 75
+		                               <i class="fa fa-phone-alt"></i> <a target="_blank" href="+261 34 65 459 75">+261 34 65 459 75</a>
 		                            </p>
 		                            <div class="socail_links">
 		                                <p>Nous suivre : </p>
-		                                <a target="_blank" href="#">
+		                                <a target="_blank" href="web.facebook.com">
 		                                    <i class="fab fa-facebook-f"></i>
 		                                </a>
-		                                <a target="_blank" href="#">
+		                                <a target="_blank" href="fr.linkedin.com">
 		                                    <i class="fab fa-linkedin-in"></i>
 		                                </a>
 		                            </div>
@@ -211,7 +208,7 @@
 							<div class="rights">
 								<p>
 								Copyright ©2020 All rights reserved <br>
-								| Made with passion by <a href="">www.dev-inbox.com</a>
+								| Made with passion by <a target="_blank" href="https://www.dev-inbox.com/">www.dev-inbox.com</a>
 							</p>
 							<p>
 								<a href="">Privacy Policy</a> & <a href="">Term of Use</a>
@@ -236,11 +233,64 @@
 	<!-- JAVASCRIPT -->
 	<script src="js/jquery-3.5.1.js"></script>
 	<script src="js/wow.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/main.js"></script>
-    <script>
-        new WOW().init();
-    </script>
     <script src="js/aos.js"></script>
 
 </body>
 </html>
+
+<?php 
+	use PHPMailer\PHPMailer\PHPMailer;
+
+	if (isset($_POST['nom']) && isset($_POST['mail'])&& isset($_POST['objet']) && isset($_POST['message'])) {
+		
+	$nom = $_POST['nom'];
+	$email = $_POST['mail'];
+	$objet = $_POST['objet'];
+	$message = $_POST['message'];
+
+	require_once "PHPMailer/PHPMailer.php";
+	require_once "PHPMailer/SMTP.php";
+	require_once "PHPMailer/Exception.php";
+
+	$mail = new PHPMailer();
+
+	//smtp setting
+	$mail->isSMTP();
+	$mail->Host = "smtp.gmail.com";
+	$mail->SMTPAuth = true;
+	$mail->Username = "rasolonjatovohery5@gmail.com";
+	$mail->Password = 'hery0011';
+	$mail->Port = 465;
+	$mail->SMTPSecure = "ssl";
+
+	//email setting
+	$mail->isHTML(true);
+	$mail->setFrom($email, $nom);
+	$mail->AddAddress("rasolonjatovohery5@gmail.com");
+	$mail->Subject = ("$email ($objet)");
+	$mail->Body = $message;
+
+	if ($mail->send()) {
+		echo "<script type='text/javascript'>
+               Swal.fire(
+              'Message envoyé!',
+              'Veuillez cliquer sur le boutton ci-dessous !',
+              'success'
+            );
+            var btnSwalls = document.getElementsByClassName('swal2-confirm');
+                    for(var i = 0; i<btnSwalls.length; i++)
+                    {
+                      btnSwalls[i].addEventListener('click', function(e){
+                        e.preventDefault();
+                        window.location = 'contact.php';
+                        })
+                    }
+            </script>";
+	}else{
+		echo "no";
+	}
+
+	}
+ ?>

@@ -75,7 +75,7 @@ if (!$conn) {
 				<div class="Dash-left">
 					<h2 class="title">Dashboard</h2> 
 					<ul>
-				   		<li class="text-center"><a href="create-article.html" >Créer un nouveau article</a></li>
+				   		<li class="text-center"><a href="create-actualite.php" >Créer un nouveau article</a></li>
 				   </ul>
 				</div>
 			</div>
