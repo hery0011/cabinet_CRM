@@ -92,7 +92,7 @@
 							Confiez-nous vos opérations comptables, fiscales et financières.
 					</p>
 				</div>
-				<form>
+				<form method="post" action="control_devis.php">
 					<div class="form-devis">
 						
 					<div class="row">
@@ -102,25 +102,25 @@
 					             	<label style="color: #000;"><strong>Votre demande porte sur : *</strong></label>
 					              	<div class="form-check">
 									  <label class="form-check-label">
-									    <input type="checkbox" class="form-check-input" value="">Comptabilité
+									    <input type="checkbox" class="form-check-input" value="Comptabilité" name="comptabilite">Comptabilité
 									  </label>
 									  <label class="form-check-label">
-									    <input type="checkbox" class="form-check-input" value="">Audit
+									    <input type="checkbox" class="form-check-input" value="Audit" name="audit">Audit
 									  </label>
 									  <label class="form-check-label">
-									    <input type="checkbox" class="form-check-input" value="">Fiscalité
+									    <input type="checkbox" class="form-check-input" value="Fiscalité" name="fiscalite">Fiscalité
 									  </label>
 									  <label class="form-check-label">
-									    <input type="checkbox" class="form-check-input" value="">Création d'entreprise
+									    <input type="checkbox" class="form-check-input" value="Création d'entreprise" name="creation_entreprise">Création d'entreprise
 									  </label>
 									  <label class="form-check-label">
-									    <input type="checkbox" class="form-check-input" value="">Gestion de la paie
+									    <input type="checkbox" class="form-check-input" value="Gestion de la paie" name="gestion_paix">Gestion de la paie
 									  </label>
 									  <label class="form-check-label">
-									    <input type="checkbox" class="form-check-input" value="">Finance
+									    <input type="checkbox" class="form-check-input" value="Finance" name="finance">Finance
 									  </label>
 									  <label class="form-check-label">
-									    <input type="checkbox" class="form-check-input" value="">Autres
+									    <input type="checkbox" class="form-check-input" value="Autres" name="autre">Autres
 									  </label>
 									</div> 
 					             </div>  
@@ -130,19 +130,19 @@
 
 					              	<div class="form-check">
 									  <label class="form-check-label">
-									    <input type="radio" class="form-check-input" name="optradio">Aucun
+									    <input type="radio" class="form-check-input" name="salaries" value="Aucun">Aucun
 									  </label>
 									  <label class="form-check-label">
-									    <input type="radio" class="form-check-input" name="optradio">De 1 à 5
+									    <input type="radio" class="form-check-input" name="salaries" value="De 1 à 5">De 1 à 5
 									  </label>
 									  <label class="form-check-label">
-									    <input type="radio" class="form-check-input" name="optradio">De 6 à 30
+									    <input type="radio" class="form-check-input" name="salaries" value="De 6 à 30">De 6 à 30
 									  </label>
 									  <label class="form-check-label">
-									    <input type="radio" class="form-check-input" name="optradio">De 30 à 100
+									    <input type="radio" class="form-check-input" name="salaries" value="De 30 à 100">De 30 à 100
 									  </label>
 									  <label class="form-check-label">
-									    <input type="radio" class="form-check-input" name="optradio">Plus de 100
+									    <input type="radio" class="form-check-input" name="salaries" value="Plus de 100">Plus de 100
 									  </label>
 									</div>
 					            </div>
@@ -151,13 +151,13 @@
 
 					              	<div class="form-check">
 									  <label class="form-check-label">
-									    <input type="radio" class="form-check-input" name="optradio">Moins de 100 000 000 MGA
+									    <input type="radio" class="form-check-input" name="chiffreAffaire" value="Moins de 100 000 000 MGA">Moins de 100 000 000 MGA
 									  </label>
 									  <label class="form-check-label">
-									    <input type="radio" class="form-check-input" name="optradio">Entre 100 000 000 MGA et 200 000 000 MGA
+									    <input type="radio" class="form-check-input" name="chiffreAffaire" value="Entre 100 000 000 MGA et 200 000 000 MGA">Entre 100 000 000 MGA et 200 000 000 MGA
 									  </label>
 									  <label class="form-check-label">
-									    <input type="radio" class="form-check-input" name="optradio">Plus de 200 000 000 MGA
+									    <input type="radio" class="form-check-input" name="chiffreAffaire" value="Plus de 200 000 000 MGA">Plus de 200 000 000 MGA
 									  </label>
 									</div>
 					            </div>
@@ -166,10 +166,10 @@
 
 					              	<div class="form-check">
 									  <label class="form-check-label">
-									    <input type="radio" class="form-check-input" name="optradio">Oui
+									    <input type="radio" class="form-check-input" name="comptable" value="Oui">Oui
 									  </label>
 									  <label class="form-check-label">
-									    <input type="radio" class="form-check-input" name="optradio">Non
+									    <input type="radio" class="form-check-input" name="comptable" value="Non">Non
 									  </label>
 									</div>
 					            </div>
@@ -177,24 +177,24 @@
 					            <div class="form-group">
 					              <label style="color: #000;"><strong>Quelle est la forme juridique de votre société?</strong></label>
 					              <i class="fa fa-chevron-down"></i>
-					              <select class="form-control">
+					              <select class="form-control" name="forme_juridique">
 					                <option>- Sélectionner - </option>
-					                <option>Entreprise individuelle</option>
-					                <option> SARLU</option>
-					                <option>SARL</option>
-					                <option>SA</option>
-					                <option>Autres</option>
+					                <option value="Entreprise individuelle">Entreprise individuelle</option>
+					                <option value="SARLU"> SARLU</option>
+					                <option value="SARL">SARL</option>
+					                <option value="SA">SA</option>
+					                <option value="Autres">Autres</option>
 					              </select>
 					            </div>
 
 					            <div class="form-group">
 					            	<label style="color: #000;"><strong>Comment avez-vous connu CRM?</strong></label>
 					              <i class="fa fa-chevron-down"></i>
-					              <select class="form-control">
+					              <select class="form-control" name="comment">
 					                <option>- Sélectionner - </option>
-					                <option>Recherche sur Internet</option>
-					                <option>Sur recommandation</option>
-					                <option>Autres</option>
+					                <option value="Recherche sur Internet">Recherche sur Internet</option>
+					                <option value="Sur recommandation">Sur recommandation</option>
+					                <option value="Autres">Autres</option>
 					              </select>
 					            </div>
 						</div>
@@ -204,44 +204,44 @@
 								<h3 class="title">Informations personnelles</h3>
 								<div class="form-group">
 					              <label>Nom</label>
-					              <input type="text" class="form-control" placeholder="">
+					              <input type="text" class="form-control" placeholder="" name="nom">
 					              <label>Prénom</label>
-					              <input type="text" class="form-control" placeholder="">
+					              <input type="text" class="form-control" placeholder="" name="prenom">
 					              <label>Entreprise</label>
-					              <input type="text" class="form-control" placeholder="">
+					              <input type="text" class="form-control" placeholder="" name="entreprise">
 					            </div>
 
 					            <div class="form-group">
 					              <label style="color: #000;"><strong>Secteur d'activité *</strong></label>
 					              <i class="fa fa-chevron-down"></i>
-					              <select class="form-control">
+					              <select class="form-control" name="secteur">
 					                <option>- Sélectionner - </option>
-					                <option>Artisan / commerçant</option>
-					                <option>Banque / assurance </option>
-					                <option>Association</option>
-					                <option>Entreprise de services </option>
-					                <option>Industrie</option>
-					                <option>Professionnel libéral </option>
-					                <option>Santé / hôpitaux / clinique </option>
-					                <option>Autres</option>
+					                <option value="Artisan / commerçant">Artisan / commerçant</option>
+					                <option value="Banque / assurance">Banque / assurance </option>
+					                <option value="Association">Association</option>
+					                <option value="Entreprise de services">Entreprise de services </option>
+					                <option value="Industrie">Industrie</option>
+					                <option value="Professionnel libéral">Professionnel libéral </option>
+					                <option value="Santé / hôpitaux / clinique">Santé / hôpitaux / clinique </option>
+					                <option value="Autres">Autres</option>
 					              </select>
 					            </div>
 
 					            <div class="form-group">
 					              <label>Email</label>
-					              <input type="email" class="form-control">
+					              <input type="email" class="form-control" name="email">
 					            </div>
 					            <div class="form-group"> 
 					              <label>Téléphone</label>
-					              <input type="number" class="form-control">
+					              <input type="number" class="form-control" name="tel">
 					            </div>
 					            <div class="form-group"> 
 					              <label>Ville</label>
-					              <input type="text" class="form-control">
+					              <input type="text" class="form-control" name="ville">
 					            </div>
 					            <div class="form-group">  
 					              <label>Code postal</label>
-					              <input type="number" class="form-control">
+					              <input type="number" class="form-control" name="code_postal">
 					            </div>
 					         </div>
 						</div>
@@ -251,7 +251,7 @@
 							<div class="devis-msg">
 								<div class="form-group">
 					              <label>Message</label>
-					              <textarea class="form-control" rows="5">
+					              <textarea class="form-control" rows="5" name="message">
 		      						</textarea>
 					            </div>
 							</div>
