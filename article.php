@@ -95,14 +95,8 @@
 				<div class="row">
 					<div class="col-md-3">
 						<aside id="filter">
-							<h2 class="title"><b>Restez <span style="color:#4997d1; ">informé</span></b></h2>
+							<h2 class="title"><b>Historique</b></h2>
 							<div class="actu-filter">
-								<p class="">
-									Vous décrouvrez ici toutes les informations nous concernant. Nous partageons des conseils et astuces pour vous accompagner dans vos projets.
-								</p>
-
-								<h2 class="title"><b>Historique</b></h2>
-
 								<div class="check-filter"> 
 					              <ul>
 					              	<?php 
@@ -121,7 +115,7 @@
 							          }
 					              	 ?>
 					              </ul>
-					          </div>
+					          	</div>								
 							</div>
 						</aside>
 					</div>
@@ -192,9 +186,9 @@
 		                                <strong>Documentations</strong>
 		                            </h3>
 		                            <ul>
-		                                <li><a target="_blank" href="https://edbm.mg/sitemap/main-doeuvre/?lang=fr"><i class="fa fa-download"></i> Travail</a></li>
-		                                <li><a target="_blank" href="https://edbm.mg/sitemap/commerce/?lang=fr"><i class="fa fa-download"></i> Commerce</a></li>
-		                                <li><a target="_blank" href="https://edbm.mg/sitemap/lois-sur-les-societes/?lang=fr"><i class="fa fa-download"></i> Lois sur les sociétés</a></li>
+		                                <li><a target="_blank" href="https://edbm.mg/sitemap/main-doeuvre/?lang=fr"><i class="fa fa-download"></i>&nbsp Travail</a></li>
+		                                <li><a target="_blank" href="https://edbm.mg/sitemap/commerce/?lang=fr"><i class="fa fa-download"></i>&nbsp Commerce</a></li>
+		                                <li><a target="_blank" href="https://edbm.mg/sitemap/lois-sur-les-societes/?lang=fr"><i class="fa fa-download"></i>&nbsp Lois sur les sociétés</a></li>
 		                            </ul>
 		                        </div>
 		                    </div>
