@@ -130,8 +130,27 @@ die("Connection failed: " . mysqli_connect_error());
 									<div class="container">
 
 									<?php 
+										$sql = "SELECT * FROM article";
+										$resultat = mysqli_query($conn, $sql);
+										$total_ligne = mysqli_num_rows($resultat);
+										if(isset($_GET["debut"]))
+										{
+											$commencement = $_GET["debut"];
+											//$nbliste = $_GET["liste"];
+											$nbliste = 3;
+										}
+										else
+										{
+											$commencement = 0;
+											$nbliste = 3;
+										}
 
-										$sql = "SELECT * FROM article ORDER BY id_art DESC LIMIT 3";
+										$nb_page = ceil($total_ligne/$nbliste);
+										$sql = "SELECT * FROM article ORDER BY id_art DESC LIMIT  $commencement, $nbliste";
+
+
+
+										//$sql = "SELECT * FROM article ORDER BY id_art DESC LIMIT 3";
 										$result = mysqli_query($conn, $sql);
 										if ($result->num_rows > 0) {
 										while($row = $result->fetch_assoc()) {
@@ -164,6 +183,19 @@ die("Connection failed: " . mysqli_connect_error());
 												}
 											 ?>
 									</div>
+									 <div class="container">
+									 	<ul class="pagination">
+									  	<?php
+									 	for($i = 0; $i<$nb_page; $i++){
+									 		$k = $i * $nbliste;
+									 		$p = $i+1;
+
+									 		?>
+									 		<li class="page-item"><a class="page-link"  href="actualite.php?debut=<?php echo $k  ?>"><?php echo $p; ?></a></li>
+									  
+									<?php } ?>
+									 	 </ul>
+									 </div>
 								</section>
 
 
