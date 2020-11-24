@@ -52,7 +52,7 @@ if (!$conn) {
 									
 									<div class="navbar-menu">
 										<ul class="navbar-menu-list">
-											<li class="navbar-menu-item contain pullUpDown"><a href="create-article.html">Nouveau article</a></li>
+											<li class="navbar-menu-item contain pullUpDown"><a href="create-article.html">Nouvel article</a></li>
 											<li class="navbar-menu-item"><a href="index.html" class="log-btn">Logout</a></li>
 										</ul>
 									</div>
@@ -75,7 +75,7 @@ if (!$conn) {
 				<div class="Dash-left">
 					<h2 class="title">Dashboard</h2> 
 					<ul>
-				   		<li class="text-center"><a href="create-article.html" >Créer un nouveau article</a></li>
+				   		<li class="text-center"><a href="create-article.html" >Créer un Nouvel article</a></li>
 				   </ul>
 				</div>
 			</div>
@@ -169,9 +169,9 @@ if (!$conn) {
 		                                <strong>Documentations</strong>
 		                            </h3>
 		                            <ul>
-		                                <li><a target="_blank" href="https://edbm.mg/sitemap/main-doeuvre/?lang=fr"><i class="fa fa-download"></i> Travail</a></li>
-		                                <li><a target="_blank" href="https://edbm.mg/sitemap/commerce/?lang=fr"><i class="fa fa-download"></i> Commerce</a></li>
-		                                <li><a target="_blank" href="https://edbm.mg/sitemap/lois-sur-les-societes/?lang=fr"><i class="fa fa-download"></i> Lois sur les sociétés</a></li>
+		                                <li><a target="_blank" href="https://edbm.mg/sitemap/main-doeuvre/?lang=fr"><i class="fa fa-download"></i>&nbsp Travail</a></li>
+		                                <li><a target="_blank" href="https://edbm.mg/sitemap/commerce/?lang=fr"><i class="fa fa-download"></i>&nbsp Commerce</a></li>
+		                                <li><a target="_blank" href="https://edbm.mg/sitemap/lois-sur-les-societes/?lang=fr"><i class="fa fa-download"></i>&nbsp Lois sur les sociétés</a></li>
 		                            </ul>
 		                        </div>
 		                    </div>

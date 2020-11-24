@@ -22,3 +22,10 @@ $('.hamburger').click(function(){
 $('.nav-drop-menu').click(function(){
 	$(this).next().toggle();
 })
+
+$('.about-img img').on('mouseover', function(){
+	$('.founder-description').addClass('show-description')
+})
+$('.about-img img').on('mouseleave', function(){
+	$('.founder-description').removeClass('show-description')
+})
