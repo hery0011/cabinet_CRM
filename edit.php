@@ -57,7 +57,16 @@
 		            <div class="form-group">
 		              <label>image</label>
 		              <img src="<?php echo $row['image_art'] ?>" width="100" height="50"><br>
-		              <input type="file" name="image">
+		              <?php 	
+		              	$sql2 = "SELECT image_art FROM article WHERE id_art = $id";
+						$res = mysqli_query($conn, $sql2);
+						if($res)
+						{
+							$ligne = mysqli_fetch_assoc($res);
+							$image = $ligne['image_art'];
+						}
+ 						?>
+		              <input type="file" name="image" value="<?php if(isset($image)){echo $image;} ?>">
 		            </div>
 
 		            <div class="form-group">
