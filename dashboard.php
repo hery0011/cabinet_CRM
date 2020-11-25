@@ -1,3 +1,4 @@
+
 <?php 
 
 $servername = "localhost";
@@ -28,6 +29,8 @@ if (!$conn) {
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/sweetalert2.all.js"></script>
+  	<script type="text/javascript" src="js/sweetalert2.all.min.js"></script>
 </head>
 <body>
 
@@ -121,7 +124,7 @@ if (!$conn) {
 						    					   <td>
 							            				<div class="text-center">
 								            				<a href="edit.php?id=<?php echo $row["id_art"]?>" class="btn btn-success"><i class="fa fa-edit"></i></a>
-								            				<a href="delete.php?id=<?php echo $row["id_art"]?>" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+								            				<a id_data="<?php echo $row["id_art"]?>" class="delete btn btn-danger"><i class="fa fa-trash"></i></a>
 								            			</div>
 						           					</td>
 						           			</tr>
@@ -228,6 +231,7 @@ if (!$conn) {
 	<script src="js/jquery-3.5.1.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/main.js"></script>
+	<script type="text/javascript" src="js/control.js"></script>
     <script>
         new WOW().init();
     </script>
