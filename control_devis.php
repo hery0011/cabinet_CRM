@@ -50,12 +50,12 @@ if(isset($_POST['autre'])){
 	}
 
 //expert comptable
-	$expertComptable = "<br><b>Ayant un expert comptable :</b>";
+	/*$expertComptable = "<br><b>Ayant un expert comptable :</b>";
 	if(isset($_POST["comptable"]))
 	{
 		$comptable = trim($_POST["comptable"]);
 		$expertComptable .= "<br> $comptable";
-	}
+	}*/
 
 //forme juridique du société
 	if(isset($_POST['forme_juridique'])){
@@ -63,9 +63,9 @@ if(isset($_POST['autre'])){
 	}
 
 // Reconnaissance du CRM
-	if(isset($_POST['comment'])){
+	/*if(isset($_POST['comment'])){
 		$comment = $_POST['comment'];
-	}
+	}*/
 
 //information personnel
 	$information ="<br><b>Information personnelles :</b> ";
@@ -100,17 +100,17 @@ if(isset($_POST['autre'])){
 		$information .= "<br><b>Téléphone :</b> $tel";
 	}
 
-	if(isset($_POST['ville']))
+	/*if(isset($_POST['ville']))
 	{
 		$ville = $_POST['ville'];
 		$information .= "<br><b>Ville:</b> $ville";
-	}
-
+	}*/
+/*
 	if(isset($_POST['code_postal']))
 	{
 		$code_postal = $_POST['code_postal'];
 		$information .= "<br><b>Code postal :</b> $code_postal";
-	}
+	}*/
 
 	if(isset($_POST['message']))
 	{
