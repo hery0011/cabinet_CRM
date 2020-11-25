@@ -15,17 +15,7 @@
 		$mdp = $_POST['password'];
 	}
 
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "cabinet_audit";
-
-	// Create connection
-	$conn = mysqli_connect($servername, $username, $password, $dbname);
-	// Check connection
-	if (!$conn) {
-	    die("Connection failed: " . mysqli_connect_error());
-	}
+	include('connex.php');
 
 	$sql = "SELECT * FROM login WHERE login_identifiant = '$login' AND login_password='$mdp'";
 	$result = $conn->query($sql); 
