@@ -1,9 +1,11 @@
-
 <?php 
+session_start();
+if(isset($_SESSION['user']))
+{ 
 
 include('connex.php');
 
- ?>
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -45,7 +47,7 @@ include('connex.php');
 									<div class="navbar-menu">
 										<ul class="navbar-menu-list">
 											<li class="navbar-menu-item contain pullUpDown"><a href="create-article.html">Nouvel article</a></li>
-											<li class="navbar-menu-item"><a href="index.html" class="log-btn">Logout</a></li>
+											<li class="navbar-menu-item"><a href="session_destroy.php" class="log-btn">Logout</a></li>
 										</ul>
 									</div>
 							
@@ -228,3 +230,10 @@ include('connex.php');
 
 </body>
 </html>
+<?php 
+}
+else{
+    header("location:log_in.html");
+}
+
+?>

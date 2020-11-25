@@ -1,3 +1,11 @@
+<?php 
+session_start();
+if(isset($_SESSION['user']))
+{
+	session_destroy();
+}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +21,7 @@
 	if (isset($_POST['identifiant'])&& isset($_POST['password'])) {
 		$login = $_POST['identifiant'];
 		$mdp = $_POST['password'];
-	}
+	
 
 	include('connex.php');
 
@@ -22,6 +30,7 @@
 	$row = $result->fetch_assoc();
 	
 	if ($row) {
+		$_SESSION['user'] = 'admin';
 		header("location:dashboard.php");
 	}else{
 		echo "<script type='text/javascript'>
@@ -40,7 +49,10 @@
 				}
 			</script>";
 	}
-
-	
+	}
+	else
+	{
+		header("location:log_in.html");
+	}
 	mysqli_close($conn);
  ?>
