@@ -1205,6 +1205,9 @@ log-main
 		position: relative;
 		left: 0;
 	}
+	.dashboard {
+		overflow-x: visible !important;
+	}
 	.dashboard .collapse-height {
     height: 15rem !important;
 	}
