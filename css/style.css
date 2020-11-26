@@ -40,7 +40,9 @@
     font-style: normal;
     font-display: swap;
 }
-
+body {
+	overflow-x: hidden;
+}
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: Gotham;
@@ -1128,6 +1130,17 @@ log-main
 }
 .cp-right .social-link a:nth-child(1) {
 	background-color: #3b5998;
+}
+@media only screen and (max-width: 576px ) {
+	.navbar-logo a img {
+		width: 260px !important;
+	}
+	.toggle-menu {
+		width: 85% !important;
+	}
+	#banner .inner-banner .inner-banner-slogan {
+		padding-top: 15rem !important;
+	}
 }
 @media only screen and (max-width: 767px )  {
 	#head {
