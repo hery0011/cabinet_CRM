@@ -216,7 +216,7 @@
 						<div class="actus-content">
 							<a href="actualite.php">
 								<div class="actus-img">
-								<img src="<?php echo $row['image_art'] ?>" width="100%" height="150px">
+								<img src="<?php echo $row['image_art'] ?>" width="100%" height="110px">
 								</div>
 								<h2 class="title" style="font-size: 20px;"><?php echo $row['contenu_art']; ?></h2>
 							</a>
