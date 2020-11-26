@@ -13,17 +13,7 @@
 <?php 
 	$id = $_GET['id'];
 
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "cabinet_audit";
-
-	// Create connection
-	$conn = new mysqli($servername, $username, $password, $dbname);
-	// Check connection
-	if ($conn->connect_error) {
-    	die("Connection failed: " . $conn->connect_error);
-	}
+	include('connex.php');
 
 	// sql to delete a record
 	$sql = "DELETE FROM article WHERE id_art=$id";
