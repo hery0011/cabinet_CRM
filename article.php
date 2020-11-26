@@ -41,7 +41,7 @@
 						<div class="navbar-head">
 							
 									<div class="navbar-logo">
-										<a href="index.html"><img src="img/Logo.png"></a>
+										<a href="index.php"><img src="img/Logo.png"></a>
 									</div>
 
 									<div class="toggle-menu">
@@ -52,7 +52,7 @@
 									
 									<div class="navbar-menu">
 										<ul class="navbar-menu-list">
-											<li class="navbar-menu-item contain pullUpDown"><a class="log-btn1" href="index.html" class="active">Accueil</a></li>						
+											<li class="navbar-menu-item contain pullUpDown"><a class="log-btn1" href="index.php" class="active">Accueil</a></li>						
 											<li class="navbar-menu-item contain pullUpDown nav-drop-menu">
 												<a class="log-btn1" href="cabinet_qui_sommes_nous.html">Le Cabinet </a>
 												<ul class="sub_menu">

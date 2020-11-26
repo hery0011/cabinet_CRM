@@ -24,7 +24,7 @@
 						<div class="navbar-head">
 							
 									<div class="navbar-logo">
-										<a href="index.html"><img src="img/Logo.png"></a>
+										<a href="index.php"><img src="img/Logo.png"></a>
 									</div>
 
 									<div class="toggle-menu">
@@ -35,7 +35,7 @@
 									
 									<div class="navbar-menu">
 										<ul class="navbar-menu-list">
-											<li class="navbar-menu-item contain pullUpDown"><a class="log-btn1" href="index.html" class="active">Accueil</a></li>						
+											<li class="navbar-menu-item contain pullUpDown"><a class="log-btn1" href="index.php" class="active">Accueil</a></li>						
 											<li class="navbar-menu-item contain dropdown pullUpDown">
 												<a class="log-btn1" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Le Cabinet </a>
 												<ul class="sub_menu sub1 dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -193,11 +193,50 @@
 					</div>
 				</section>
 
+
+
+
+		<?php 
+			include('connex.php');
+
+			$sql = "SELECT * FROM article ORDER BY id_art DESC LIMIT 3";
+			$result = mysqli_query($conn, $sql);
+		?>		
+
 		<section class="actus"> 
 			<div class="container">
 				<h2 style="text-align : left; color : #46606c;"><b>Actualités</b></h2>
 				<div class="row">
+
+					<?php 	
+						if ($result->num_rows > 0) {
+						while($row = $result->fetch_assoc()) {
+					 ?>
 					<div class="col-md-4">
+						<div class="actus-content">
+							<a href="actualite.php">
+								<div class="actus-img">
+								<img src="<?php echo $row['image_art'] ?>" width="100%" height="200px">
+								</div>
+								<h2 class="title" style="font-size: 20px;"><?php echo $row['contenu_art']; ?></h2>
+							</a>
+						</div>
+					</div>
+					<?php 
+						}
+					}
+					?>
+					<!-- <div class="col-md-4">
+						<div class="actus-content">
+							<a href="actualite.php">
+								<div class="actus-img">
+								<img src="img/images/actualites.jpg">
+								</div>
+								<h2 class="title" style="font-size: 20px;"></h2>
+							</a>
+						</div>
+					</div>
+					 --><!-- <div class="col-md-4">
 						<div class="actus-content">
 							<a href="actualite.php">
 								<div class="actus-img">
@@ -206,27 +245,7 @@
 								<h2 class="title" style="font-size: 20px;">Lorem ipsum dolor sit amet.</h2>
 							</a>
 						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="actus-content">
-							<a href="actualite.php">
-								<div class="actus-img">
-								<img src="img/images/actualites.jpg">
-								</div>
-								<h2 class="title" style="font-size: 20px;">Lorem ipsum dolor sit amet.</h2>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="actus-content">
-							<a href="actualite.php">
-								<div class="actus-img">
-								<img src="img/images/actualites.jpg">
-								</div>
-								<h2 class="title" style="font-size: 20px;">Lorem ipsum dolor sit amet.</h2>
-							</a>
-						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</section>

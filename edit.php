@@ -95,7 +95,7 @@
 					<div class="col-xl-4 col-md-6 col-lg-4 offset-right">
                         <div class="footer_widget">
                             <div class="footer_logo">
-                                <a href="index.html">
+                                <a href="index.php">
                                     <img src="img/Logo.png">
                                 </a>
                             </div>

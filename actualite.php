@@ -1,13 +1,5 @@
 <?php 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "cabinet_audit";
-
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-if (!$conn) {
-die("Connection failed: " . mysqli_connect_error());
-}
+	include('connex.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -35,7 +27,7 @@ die("Connection failed: " . mysqli_connect_error());
 						<div class="navbar-head">
 							
 									<div class="navbar-logo">
-										<a href="index.html"><img src="img/Logo.png"></a>
+										<a href="index.php"><img src="img/Logo.png"></a>
 									</div>
 
 									<div class="toggle-menu">
@@ -46,7 +38,7 @@ die("Connection failed: " . mysqli_connect_error());
 									
 									<div class="navbar-menu">
 										<ul class="navbar-menu-list">
-											<li class="navbar-menu-item contain pullUpDown"><a class="log-btn1" href="index.html" class="active">Accueil</a></li>						
+											<li class="navbar-menu-item contain pullUpDown"><a class="log-btn1" href="index.php" class="active">Accueil</a></li>						
 											<li class="navbar-menu-item contain dropdown pullUpDown">
 												<a class="log-btn1" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Le Cabinet </a>
 												<ul class="sub_menu sub1 dropdown-menu" aria-labelledby="dropdownMenuButton">

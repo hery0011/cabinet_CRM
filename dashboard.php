@@ -35,7 +35,7 @@ include('connex.php');
 						<div class="navbar-head">
 							
 									<div class="navbar-logo">
-										<a href="index.html"><img src="img/Logo.png"></a>
+										<a href="index.php"><img src="img/Logo.png"></a>
 									</div>
 
 									<div class="toggle-menu">
