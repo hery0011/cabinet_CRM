@@ -18,6 +18,7 @@ include('connex.php');
     <link rel="stylesheet" type="text/css" href="css/all.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript" src="js/sweetalert2.all.js"></script>
@@ -65,7 +66,7 @@ include('connex.php');
 	<div class="container-fluid">
 		
 		<div class="row">
-			<div class="col-md-2">
+			<div class="col-md-12 col-lg-2">
 				<div class="Dash-left">
 					<h2 class="title">Dashboard</h2> 
 					<ul>
@@ -73,7 +74,7 @@ include('connex.php');
 				   </ul>
 				</div>
 			</div>
-			<div class="col-md-10">
+			<div class="col-md-12 col-lg-10">
 				<section id="post">
 					<div class="container">
 						<h2 class="title text-center">Gestion des actualités </h2>
@@ -221,12 +222,15 @@ include('connex.php');
 	<!-- JAVASCRIPT -->
 	<script src="js/jquery-3.5.1.js"></script>
 	<script src="js/wow.min.js"></script>
+	<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="js/dataTables.bootstrap4.min.js"></script>
 	<script src="js/main.js"></script>
 	<script type="text/javascript" src="js/control.js"></script>
-    <script>
-        new WOW().init();
+    <script type="text/javascript">
+    	$(document).ready(function() {
+		    $('#table_id').DataTable();
+		} );
     </script>
-    <script src="js/aos.js"></script>
 
 </body>
 </html>

@@ -1205,9 +1205,6 @@ log-main
 		position: relative;
 		left: 0;
 	}
-	.dashboard {
-		overflow-x: visible !important;
-	}
 	.dashboard .collapse-height {
     height: 15rem !important;
 	}
@@ -1351,8 +1348,19 @@ img {
 .div_fondatrice {
 	display: block;
 }
+.overflowX {
+	overflow-x: hidden;
+}
 
 #team::after, ::before {
 	box-sizing: border-box;
 }
-
+#table_id_length {
+	display: none;
+}
+#table_id_info {
+	display: none;
+}
+#table_id_paginate {
+	display: none;
+}
