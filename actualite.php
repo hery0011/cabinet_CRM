@@ -83,7 +83,7 @@
 	<div class="container-fluid">
 		
 				<div class="row">
-					<div class="col-md-3">
+					<div class="col-md-12 col-lg-3">
 						<aside id="filter">
 							<h2 class="title"><b>Historique</b></h2>
 							<div class="actu-filter">
@@ -115,11 +115,8 @@
 							</div>
 						</aside>
 					</div>
-					<div class="col-md-9">
+					<div class="col-md-12 col-lg-9">
 						<section id="post">
-							<div class="container">
-								<section id="post">
-									<div class="container">
 
 									<?php 
 										$sql = "SELECT * FROM article";
@@ -149,12 +146,12 @@
 									?>
 										<div class="post-content">
 											<div class="row">
-												<div class="col-md-4">
+												<div class="col-md-4 col-sm-12">
 													<div class="post-image">
 														<img src="<?php echo $row['image_art'] ?>">
 													</div>
 												</div>
-												<div class="col-md-8">
+												<div class="col-md-8 col-sm-12">
 													<div class="post-detail">
 														<h2><?php echo $row['titre_art']; ?></h2>
 														<p>
@@ -174,7 +171,7 @@
 													}
 												}
 											 ?>
-									</div>
+			
 									 <div class="container">
 									 	<ul class="pagination">
 									  	<?php
@@ -188,10 +185,6 @@
 									<?php } ?>
 									 	 </ul>
 									 </div>
-								</section>
-
-
-							</div>
 						</section>
 					</div>
 				</div>
