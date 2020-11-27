@@ -78,7 +78,7 @@ include('connex.php');
 				<section id="post">
 					<div class="container">
 						<h2 class="title text-center">Gestion des actualités </h2>
-						<table id="table_id" class="display table table-bordered">
+						<table id="table_id" class="display table-striped table table-bordered dt-responsive" style="width:100%;">
 						    <thead>
 						        <tr>
 						            <th>titre</th>
@@ -221,9 +221,10 @@ include('connex.php');
 
 	<!-- JAVASCRIPT -->
 	<script src="js/jquery-3.5.1.js"></script>
-	<script src="js/wow.min.js"></script>
 	<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
 	<script type="text/javascript" src="js/dataTables.bootstrap4.min.js"></script>
+	<script type="text/javascript" src="js/dataTables.responsive.min.js"></script>
+	<script type="text/javascript" src="js/responsive.bootstrap4.min.js"></script>
 	<script src="js/main.js"></script>
 	<script type="text/javascript" src="js/control.js"></script>
     <script type="text/javascript">

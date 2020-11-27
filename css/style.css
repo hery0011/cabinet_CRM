@@ -766,12 +766,6 @@ box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px 3px;
 .Dash-left {
 	padding: 10px;
 }
-#table_id_filter {
-	text-align: right;
-}
-#table_id_paginate .pagination {
-	margin-left: 70%;
-}
 .actus-img img {
 	width: 100%;
 }
@@ -1155,6 +1149,9 @@ log-main
 	.resp_hidden .about-img {
 		padding: 10px 65px !important;
 	}
+	div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    justify-content: center !important;
+	}
 }
 
 @media only screen and (min-width: 992px ) {
@@ -1204,6 +1201,9 @@ log-main
 	#contact .maps .adress {
 		position: relative;
 		left: 0;
+	}
+	.dashboard {
+
 	}
 	.dashboard .collapse-height {
     height: 15rem !important;
@@ -1354,13 +1354,4 @@ img {
 
 #team::after, ::before {
 	box-sizing: border-box;
-}
-#table_id_length {
-	display: none;
-}
-#table_id_info {
-	display: none;
-}
-#table_id_paginate {
-	display: none;
 }
