@@ -1,17 +1,7 @@
 <?php 
 	$id = $_GET['id'];
 
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "cabinet_audit";
-
-	// Create connection
-	$conn = new mysqli($servername, $username, $password, $dbname);
-	// Check connection
-	if ($conn->connect_error) {
-    	die("Connection failed: " . $conn->connect_error);
-	}
+	include('connex.php');
 
 	$sql = "SELECT * FROM article WHERE id_art = $id";
 	$result = $conn->query($sql); 
@@ -167,7 +157,7 @@
 			<div class="rights">
 				<p>
 				Copyright ©2020 All rights reserved <br>
-| Made with passion by <a href="">www.dev-inbox.com</a>
+				| Made with passion by <a href="">www.dev-inbox.com</a>
 			</p>
 			<p>
 				<a href="">Privacy Policy</a> & <a href="">Term of Use</a>
