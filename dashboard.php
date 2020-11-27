@@ -82,10 +82,10 @@ include('connex.php');
 						    <thead>
 						        <tr>
 						            <th>titre</th>
-						            <th>Date de publication</th>
+						            <!-- <th>Date de publication</th>
 						            <th>Image</th>
 						            <th>Contenu</th>
-						            <th>Signature </th>
+						            <th>Signature </th> -->
 						            <th>Action</th>
 
 						        </tr>
@@ -109,10 +109,10 @@ include('connex.php');
 						    					?>
 						    					<tr data-id="<?php echo $row['id_art']; ?>">
 						    					 <td><?php echo $titre; ?></td>
-						    					 <td><?php echo $date; ?></td>
+						    					<!--  <td><?php echo $date; ?></td>
 						    					 <td><img src="<?php echo $image; ?>" width="100" height="50"> </td>
 						    					  <td><?php echo $contenu; ?></td>
-						    					  <td><?php echo $signature; ?></td>
+						    					  <td><?php echo $signature; ?></td> -->
 						    					   <td>
 							            				<div class="text-center">
 								            				<a href="edit.php?id=<?php echo $row["id_art"]?>" class="btn btn-success"><i class="fa fa-edit"></i></a>
