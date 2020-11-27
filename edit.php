@@ -157,7 +157,7 @@
 			<div class="rights">
 				<p>
 				Copyright ©2020 All rights reserved <br>
-| Made with passion by <a href="">www.dev-inbox.com</a>
+				| Made with passion by <a href="">www.dev-inbox.com</a>
 			</p>
 			<p>
 				<a href="">Privacy Policy</a> & <a href="">Term of Use</a>
