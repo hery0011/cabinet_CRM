@@ -99,16 +99,16 @@ include('connex.php');
 						    		if($resultat){
 						    			if(mysqli_num_rows($resultat)>0){
 						    				while ($row = mysqli_fetch_assoc($resultat)){
-						    						$titre = $row['titre_art'];
+						    						/*$titre = $row['titre_art'];
 								    				$date =  $row['date_pub_art'];
 								    				$image = $row['image_art'];
 								    				$contenu = substr($row['contenu_art'],0,10);
 								    				$contenu .= "....";
-								    				$signature = $row['signature_art'];
+								    				$signature = $row['signature_art'];*/
 
 						    					?>
 						    					<tr data-id="<?php echo $row['id_art']; ?>">
-						    					 <td><?php echo $titre; ?></td>
+						    					 <td><?php echo $row['titre_art']; ?></td>
 						    					<!--  <td><?php echo $date; ?></td>
 						    					 <td><img src="<?php echo $image; ?>" width="100" height="50"> </td>
 						    					  <td><?php echo $contenu; ?></td>
