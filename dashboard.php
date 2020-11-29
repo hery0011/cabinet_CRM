@@ -66,15 +66,15 @@ include('connex.php');
 	<div class="container-fluid">
 		
 		<div class="row">
-			<div class="col-md-12 col-lg-2">
+			<!-- <div class="col-md-12 col-lg-2">
 				<div class="Dash-left">
 					<h2 class="title">Dashboard</h2> 
 					<ul>
 				   		<li class="text-center"><a href="create-article.html" >Créer un Nouvel article</a></li>
 				   </ul>
 				</div>
-			</div>
-			<div class="col-md-12 col-lg-10">
+			</div> -->
+			<div class="col-md-12 col-lg-12">
 				<section id="post">
 					<div class="container">
 						<h2 class="title text-center">Gestion des actualités </h2>

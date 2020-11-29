@@ -81,6 +81,10 @@ li {
   list-style: none;
 }
 
+.liste_article{
+  list-style-type: circle;
+}
+
 /* line 60, ../../Arafath/CL/CL september/205. Barber/HTML/scss/reset.scss */
 p {
   font-size: 16px;

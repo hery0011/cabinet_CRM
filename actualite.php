@@ -105,7 +105,7 @@
 								 ?>
 
 								
-					              	<li class=""><a href=""><?php echo $row['titre_art']; ?></a></li>
+					              	<li class="liste_article"><a href=""><?php echo $row['titre_art']; ?></a></li>
 					              	<?php 
 							              }
 							          }
