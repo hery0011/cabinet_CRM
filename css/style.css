@@ -239,22 +239,22 @@ a.log-btn:hover {
  }
 
 .banner-home {
-	background: url('../img/images/slogan_accueil.jpg');
+	background: url('../img/images/photo_accueil.jpg');
 }
 
 .banner-devis {
-	background: url('../img/images/devis.jpg');
+	background: url('../img/images/photo_devis.jpg');
 }
 
 .banner-service {
-	background: url('../img/service.jpg');
+	background: url('../img/photo_service.jpg');
 }
 
 .banner-contact {
-	background: url('../img/images/contact.jpg');
+	background: url('../img/images/photo_contact.jpg');
 }
 .banner-actus {
-	background: url('../img/images/actualites.jpg');
+	background: url('../img/images/photo_actualites.jpg');
 }
 
 
@@ -777,7 +777,7 @@ box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px 3px;
 
 /*---------------------------*/
 .banner-cabinet {
-	background: url('../img/images/qui_sommes_nous.jpg');
+	background: url('../img/images/photo_cabinet.jpg');
 }
 .Cabinet-content h2 {
 	color: #07518b;
@@ -806,7 +806,6 @@ box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px 3px;
 	background-color: #fff;
 	border: 1px solid #4997d1;
 	padding: 20px;
-	width: 350px;
 	height: 310px;
 	margin: 15px auto;
 }
@@ -1135,6 +1134,9 @@ log-main
 	#banner .inner-banner .inner-banner-slogan {
 		padding-top: 15rem !important;
 	}
+	.Cabinet-content .title-card::before {
+		left: 205px;
+	}
 }
 @media only screen and (max-width: 767px )  {
 	#head {
@@ -1151,6 +1153,9 @@ log-main
 	}
 	div.dataTables_wrapper div.dataTables_paginate ul.pagination {
     justify-content: center !important;
+	}
+	#service .service-content p {
+		text-align: left !important;
 	}
 }
 

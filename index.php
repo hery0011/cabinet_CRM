@@ -83,7 +83,7 @@
 							<div class="inner-banner-slogan wow fadeInLeft" data-wow-duration="1s">
 								
 								
-								<h2 class="" style="font-family: Gotham; font-size : 30px;"><mark style="background-color: #46606c;">Votre projet au centre de nos préoccupations </mark></h2>
+								<h2 class="" style="font-family: Gotham; font-size : 27px;"><mark style="background-color: #46606c;">Votre projet au centre de nos préoccupations </mark></h2>
 								
 								<p class="" style="font-family: 'Gotham'; font-size : 20px;"><mark style="background-color: #46606c;">Votre réussite, notre victoire </mark><span style="color: #46606c;"></span></p>
 
