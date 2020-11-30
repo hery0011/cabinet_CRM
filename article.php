@@ -65,6 +65,9 @@
 											<li class="navbar-menu-item contain pullUpDown"><a class="log-btn1" href="actualite.php">Actualités</a></li>
 											<li class="navbar-menu-item contain pullUpDown"><a class="log-btn1" href="contact.php">Contact</a></li>
 										</ul>
+										<div class="resp-login-btn">
+											<a href="log_in.html " class="connect-btn"><i class="fas fa-sign-in-alt"></i></a>
+										</div>
 									</div>
 
 									<div class="sign-in-btn">
@@ -83,7 +86,7 @@
 	<div class="container-fluid">
 		
 				<div class="row">
-					<div class="col-md-3">
+					<div class="col-md-12 col-lg-3">
 						<aside id="filter">
 							<h2 class="title"><b>Historique</b></h2>
 							<div class="actu-filter">
@@ -109,7 +112,7 @@
 							</div>
 						</aside>
 					</div>
-					<div class="col-md-9">
+					<div class="col-md-12 col-lg-8">
 						<section id="post">
 							<div class="container">
 								<?php 

@@ -702,6 +702,7 @@ box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px 3px;
 	top:100px;
 	padding: 25px;
 }
+
 #post .post-content {
 	background: #fff;
 	margin: 15px;
@@ -1222,6 +1223,9 @@ color: #fff;
 	#service .service-content p {
 		text-align: left !important;
 	}
+	.article-info span {
+		padding: 40px;
+	}
 }
 
 @media only screen and (min-width: 992px ) {
@@ -1289,12 +1293,16 @@ color: #fff;
 	.post-btn button.float-right {
 		float: unset !important;
 	}
+	#post .title {
+	font-size: 18px !important;
+	}
 	.article-info {
 		position: relative;
 		left: 0;
+		padding: 10px 25px;
 	}
 	#contact .maps .adress {
-		display: none;a
+		display: none;
 	}
 	.dashboard {
 
@@ -1314,6 +1322,12 @@ color: #fff;
 	.adress-responsive {
 		display: block !important;
 		margin: auto;
+	}
+	.resp-login-btn {
+		display: block !important;
+	}
+	.sign-in-btn {
+		display: none !important;
 	}
 }
 
@@ -1335,7 +1349,6 @@ color: #fff;
 	}
 	.Cabinet-content .card-wrap2 {
 		width: 355px;
-
 	}
 	.Cabinet-content .title-card2::before {
     left: 125px;
@@ -1481,5 +1494,12 @@ img {
 	box-sizing: border-box;
 }
 .adress-responsive {
+	display: none;
+}
+.connect-btn {
+	padding: 15px;
+}
+.resp-login-btn {
+	text-align: right;
 	display: none;
 }
