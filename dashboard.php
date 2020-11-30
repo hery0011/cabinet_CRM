@@ -81,7 +81,7 @@ include('connex.php');
 						<table id="table_id" class="display table-striped table table-bordered dt-responsive" style="width:100%;">
 						    <thead>
 						        <tr>
-						            <th>titre</th>
+						            <th>Titre</th>
 						            <!-- <th>Date de publication</th>
 						            <th>Image</th>
 						            <th>Contenu</th>
