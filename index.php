@@ -212,7 +212,7 @@
 						if ($result->num_rows > 0) {
 						while($row = $result->fetch_assoc()) {
 					 ?>
-					<div class="col-md-4">
+					<div class="col-sm-12 col-md-12 col-lg-4">
 						<div class="actus-content">
 							<a href="actualite.php">
 								<div class="actus-img">

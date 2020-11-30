@@ -897,9 +897,8 @@ box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px 3px;
 	background-color: #fff;
 	border: 1px solid #4997d1;
 	padding: 20px;
-	width: 350px;
 	height: 310px;
-	margin: 15px auto;
+	margin: 20px auto;
 }
 
 .Cabinet-content .card-wrap2:hover {
@@ -1124,6 +1123,60 @@ log-main
 .cp-right .social-link a:nth-child(1) {
 	background-color: #3b5998;
 }
+.adress-responsive {
+background: #5a9abe;
+padding: 20px;
+width: 358px;
+border-radius: 5px;
+color: #fff;
+}
+@media only screen and (max-width: 360px ) {
+	.Cabinet-content .title-card::before {
+		left: 100px;
+	}
+	.Cabinet-content .card-wrap .card-toggle::before {
+		left: 100px;	
+	}
+	.Cabinet-content .title-card2::before {
+		left: 100px;
+	}
+	.Cabinet-content .card-wrap2 .card-toggle::before {
+		left: 100px;	
+	}
+}
+@media only screen and (min-width: 361px ) {
+	.Cabinet-content .title-card::before {
+		left: 108px;
+	}
+	.Cabinet-content .card-wrap .card-toggle::before {
+		left: 108px;	
+	}
+	.Cabinet-content .title-card2::before {
+		left: 108px;
+	}
+	.Cabinet-content .card-wrap2 .card-toggle::before {
+		left: 108px;	
+	}
+}
+@media only screen and (min-width: 414px ) {
+	.Cabinet-content .title-card::before {
+		left: 125px;
+	}
+	.Cabinet-content .card-wrap .card-toggle::before {
+		left: 125px;	
+	}
+	.Cabinet-content .title-card2::before {
+		left: 125px;
+	}
+	.Cabinet-content .card-wrap2 .card-toggle::before {
+		left: 125px;	
+	}
+}
+@media only screen and (max-width: 415px ) {
+	.adress-responsive {
+		width: 305px !important;
+	}
+}
 @media only screen and (max-width: 576px ) {
 	.navbar-logo a img {
 		width: 260px !important;
@@ -1134,8 +1187,20 @@ log-main
 	#banner .inner-banner .inner-banner-slogan {
 		padding-top: 15rem !important;
 	}
-	.Cabinet-content .title-card::before {
-		left: 205px;
+}
+@media only screen and (min-width: 576px ) {
+	.actus-content {
+		width: 375px;
+		margin: auto;
+	}
+}
+@media only screen and (min-width: 415px ) {
+	.Fiscalite .card-wrap {
+		width: 355px;
+	}
+	.Cabinet-content .card-wrap {
+		width: 355px;
+		margin: 20px auto;
 	}
 }
 @media only screen and (max-width: 767px )  {
@@ -1163,11 +1228,36 @@ log-main
 	.resp_hidden {
 		display: none;
 	}
+	.Cabinet-content .card-wrap {
+		width: unset !important;
+	}
+	.Fiscalite .card-wrap {
+		width: unset !important;
+	}
+	.actus-content {
+		width: unset !important;
+	}
 }
 @media only screen and (min-width: 768px ) {
 	.resp_hidden .about-img {
     padding: 10px 155px !important;
 		}
+	.Cabinet-content .title-card::before {
+		left: 128px;
+	}
+	.Cabinet-content .card-wrap .card-toggle::before {
+		left: 128px;
+	}
+	.Cabinet-content .title-card2::before {
+		left: 115px;
+	}
+	.Cabinet-content .card-wrap2 .card-toggle::before {
+		left: 115px;	
+	}
+	.Cabinet-content .card-wrap {
+		width: 355px;
+		margin: 20px auto;
+	}
 }
 @media only screen and (max-width: 991px ) {
 	#head {
@@ -1204,8 +1294,7 @@ log-main
 		left: 0;
 	}
 	#contact .maps .adress {
-		position: relative;
-		left: 0;
+		display: none;a
 	}
 	.dashboard {
 
@@ -1222,8 +1311,39 @@ log-main
 	.founder-img::before { 
 		display: none;
 	}
+	.adress-responsive {
+		display: block !important;
+		margin: auto;
+	}
 }
 
+@media only screen and (min-width: 992px) {
+.Cabinet-content .title-card::before {
+    left: 95px;
+	}
+
+.Cabinet-content .card-wrap .card-toggle::before {
+	left: 95px;
+}
+}
+@media only screen and (min-width: 1200px) {
+	.Cabinet-content .title-card::before {
+		left: 128px;
+	}
+	.Cabinet-content .card-wrap .card-toggle::before {
+    	left: 128px;
+	}
+	.Cabinet-content .card-wrap2 {
+		width: 355px;
+
+	}
+	.Cabinet-content .title-card2::before {
+    left: 125px;
+	}
+	.Cabinet-content .card-wrap2 .card-toggle::before {
+    left: 125px;
+}
+}
 .about {
 	padding: 50px;
 	box-sizing: border-box;
@@ -1359,4 +1479,7 @@ img {
 
 #team::after, ::before {
 	box-sizing: border-box;
+}
+.adress-responsive {
+	display: none;
 }

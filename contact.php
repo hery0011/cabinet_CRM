@@ -138,6 +138,13 @@
 										</ul>
 									</div>
 								</div>
+								<div class="adress-responsive">
+										<ul>
+											<li><b>Raison sociale : </b>CRM COMPTABILITE, AUDIT & CONSEIL SARLU</li>
+											<li><b>Siège social : </b>Lot II M 92 Antsakaviro</li>
+											<li><b>Téléphone : </b>+ 261 34 65 459 75</li>
+										</ul>
+									</div>
 							</div>
 						</div>
 					</div>
