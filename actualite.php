@@ -158,7 +158,7 @@
 													<div class="post-detail">
 														<h2><?php echo $row['titre_art']; ?></h2>
 														<p>
-															<?php echo $row['contenu_art']; ?>
+															<?php echo(substr($row['contenu_art'],0,210).'...'); ?>
 														</p>
 														<a href="article.php?id=<?php echo $row['id_art']; ?>">
 															<div class="post-btn">
