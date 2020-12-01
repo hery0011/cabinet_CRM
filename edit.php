@@ -35,8 +35,6 @@
 				<form method="post" action="modification.php" enctype="multipart/form-data">
 					<input type="number" name="id" value="<?php echo $row['id_art'] ?>" hidden>
 
-	
-
 		            <div class="form-group">
 				    <label>Titre</label>
 				    <input type="text" class="form-control" name="titre" value="<?php echo $row['titre_art'] ?>">
@@ -62,10 +60,10 @@
 		              <input type="file" name="image" value="<?php if(isset($image)){echo $image;} ?>">
 		            </div>
 
-					  <div class="form-group">
+					   <div class="form-group">
 					    <label>Contenu</label>
-					    <textarea class="form-control" rows="3" name="contenu"><?php echo $row['contenu_art'] ?>
-					    </textarea>
+
+					    <textarea class="form-control" rows="3" name="contenu"><?php echo $row['contenu_art'] ?></textarea>
 					  </div>
 
 		            <div class="form-group">

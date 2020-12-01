@@ -68,7 +68,10 @@ mark{
 	transition: all 300ms ease-in;
 	font-family: 'Poppins';
 }
-
+.navbar-logo a img {
+	position: relative;
+	z-index: 9;
+}
 .form-group {
 	position: relative;
 }
@@ -1224,7 +1227,7 @@ color: #fff;
 		text-align: left !important;
 	}
 	.article-info span {
-		padding: 40px;
+		display: block;
 	}
 }
 
@@ -1240,6 +1243,9 @@ color: #fff;
 	}
 	.actus-content {
 		width: unset !important;
+	}
+	.resp-login-btn {
+		display: none;
 	}
 }
 @media only screen and (min-width: 768px ) {
@@ -1323,11 +1329,8 @@ color: #fff;
 		display: block !important;
 		margin: auto;
 	}
-	.resp-login-btn {
-		display: block !important;
-	}
 	.sign-in-btn {
-		display: none !important;
+		display: none;
 	}
 }
 
@@ -1500,6 +1503,5 @@ img {
 	padding: 15px;
 }
 .resp-login-btn {
-	text-align: right;
-	display: none;
+	text-align: left;
 }
