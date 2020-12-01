@@ -64,8 +64,7 @@
 
 					  <div class="form-group">
 					    <label>Contenu</label>
-					    <textarea class="form-control" rows="3" name="contenu">
-					    	<?php echo $row['contenu_art'] ?>
+					    <textarea class="form-control" rows="3" name="contenu"><?php echo $row['contenu_art'] ?>
 					    </textarea>
 					  </div>
 
