@@ -107,6 +107,7 @@ include('connex.php');
 								    				$signature = $row['signature_art'];*/
 
 						    					?>
+						    					
 						    					<tr data-id="<?php echo $row['id_art']; ?>">
 						    					 <td><?php echo $row['titre_art']; ?></td>
 						    					<!--  <td><?php echo $date; ?></td>
