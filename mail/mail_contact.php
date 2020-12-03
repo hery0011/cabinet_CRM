@@ -29,7 +29,21 @@
                     }
             </script>";
 	}else{
-		echo "no";
+		echo "<script type='text/javascript'>
+				Swal.fire({
+				  icon: 'error',
+				  title: 'Oops...',
+				  text: 'veuillez contacter l \'administrateur du site!'
+				});
+				var btnSwalls = document.getElementsByClassName('swal2-confirm');
+				for(var i = 0; i<btnSwalls.length; i++)
+				{
+					btnSwalls[i].addEventListener('click', function(e){
+						e.preventDefault();
+						window.location = 'contact.php';
+						})
+				}
+			</script>";
 	}
 
 	}
