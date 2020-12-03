@@ -121,7 +121,7 @@
 											<i class="fa fa-calculator" style="color: #ffc107;"></i>
 										</div>
 										<div class="service-detail">
-											<h4 class="title1"><b>Expertise comptable </b></h4>
+											<h4 class="title1"><b><a href="service_expertise.html">Expertise comptable</a> </b></h4>
 											<p class="text-justify">
 												Tenue de comptabilité, révision des comptes, compilation d’états financiers
 											</p>
@@ -134,7 +134,7 @@
 												<i class="fas fa-broadcast-tower" style="color: #20c997;"></i>
 										</div>
 										<div class="service-detail">
-											<h4 class="title1"><b>Audit</b></h4>
+											<h4 class="title1"><b><a href="service_audit.html">Audit</a></b></h4>
 											
 											<p class="text-justify">
 												Audit légal (commissariat aux comptes) et audit contractuel (audit de projets, audit de fraude, etc.)
@@ -151,7 +151,7 @@
 												<i class="fas fa-tag" style="color: #28a745;"></i>
 										</div>	
 										<div class="service-detail">	
-											<h4 class="title1"><b>Fiscalité </b></h4>
+											<h4 class="title1"><b><a href="service_fiscalité.html">Fiscalité</a></b></h4>
 											<p class="text-justify">
 												Préparation des déclarations fiscales, revue et visa des déclarations fiscales, assistance et conseil fiscaux
 											</p>
@@ -164,7 +164,7 @@
 												<i class="fas fa-hand-holding-usd" style="color: #17a2b8;"></i>
 										</div>	
 										<div class="service-detail">	
-											<h4 class="title1"><b>Assistance aux investisseurs</b></h4>
+											<h4 class="title1"><b><a href="service_investisseur.html">Assistance aux investisseurs</a></b></h4>
 											<p class="text-justify">
 												Création d’entreprise, accompagnement à l’obtention de visas et d’autorisations d’emploi, établissements d’états financiers prévisionnels
 											</p>
@@ -180,7 +180,7 @@
 												<i class="fas fa-people-carry" style="color:#b2904f;"></i>
 										</div>	
 										<div class="service-detail">
-											<h4 class="title1"><b>Assistance et conseil en gestion</b></h4>
+											<h4 class="title1"><b><a href="service_conseil.html">Assistance et conseil en gestion</a></b></h4>
 										<p class="text-justify">
 											Conception et mise en place de dispositifs de pilotage, diagnostic financier
 										</p>
