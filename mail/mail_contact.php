@@ -32,7 +32,7 @@
 		echo "<script type='text/javascript'>
 				Swal.fire({
 				  icon: 'error',
-				  title: 'Oops...Une erreur s'est produite',
+				  title: 'Oops...Une erreur s\'est produite',
 				  text: 'Veuillez actualiser la page et ressaisir les informations!'
 				});
 				var btnSwalls = document.getElementsByClassName('swal2-confirm');
