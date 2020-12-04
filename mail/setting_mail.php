@@ -18,5 +18,5 @@
 	//email setting
 	$mail->isHTML(true);
 	$mail->setFrom($email, $nom);
-	$mail->AddAddress("rasolonjatovohery0011@gmail.com");
+	$mail->AddAddress("crmcac@crmcac.com");
  ?>
