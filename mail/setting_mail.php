@@ -18,5 +18,5 @@
 	//email setting
 	$mail->isHTML(true);
 	$mail->setFrom($email, $nom);
-	$mail->AddAddress("crmcac@crmcac.com");
+	$mail->AddAddress("no-replay@crmcac.com");
  ?>
