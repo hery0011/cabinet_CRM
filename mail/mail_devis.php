@@ -1,43 +1,17 @@
 <?php 
+try{
 	include("setting_mail.php");
 	
 	$objet = "Devis";
 	$mail->Subject = ("$email ($objet)");
 	$mail->Body = $affichage;
 
-	if ($mail->send()) {
-		echo "<script type='text/javascript'>
-               Swal.fire(
-              'Message envoyé!',
-              'Veuillez cliquer sur le boutton ci-dessous !',
-              'success'
-            );
-            var btnSwalls = document.getElementsByClassName('swal2-confirm');
-                    for(var i = 0; i<btnSwalls.length; i++)
-                    {
-                      btnSwalls[i].addEventListener('click', function(e){
-                        e.preventDefault();
-                        window.location = 'devis.html';
-                        })
-                    }
-            </script>";
-	}else{
-		echo "<script type='text/javascript'>
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops...Une erreur s'est produite',
-          text: 'Veuillez actualiser la page et ressaisir les informations!'
-        });
-        var btnSwalls = document.getElementsByClassName('swal2-confirm');
-        for(var i = 0; i<btnSwalls.length; i++)
-        {
-          btnSwalls[i].addEventListener('click', function(e){
-            e.preventDefault();
-            window.location = 'devis.html';
-            })
-        }
-      </script>";
-	}
-
+	if ($mail->send());
+  } catch (\Exception $exc) {
+   var_dump($exc) ;die;
+}
 
  ?>
+
+
+
