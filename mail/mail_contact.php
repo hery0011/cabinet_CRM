@@ -6,15 +6,45 @@
 	$email = $_POST['mail'];
 	$objet = $_POST['objet'];
 	$message = $_POST['message'];
-try{
+
 	include("setting_mail.php");
 	
 	$mail->Subject = ("$email ($objet)");
 	$mail->Body = $message;
 
-	if ($mail->send());
-  } catch (\Exception $exc) {
-   var_dump($exc) ;die;
-}
+	if ($mail->send()) {
+		echo "<script type='text/javascript'>
+               Swal.fire(
+              'Message envoyé!',
+              'Veuillez cliquer sur le boutton ci-dessous !',
+              'success'
+            );
+            var btnSwalls = document.getElementsByClassName('swal2-confirm');
+                    for(var i = 0; i<btnSwalls.length; i++)
+                    {
+                      btnSwalls[i].addEventListener('click', function(e){
+                        e.preventDefault();
+                        window.location = 'contact.php';
+                        })
+                    }
+            </script>";
+	}else{
+		echo "<script type='text/javascript'>
+				Swal.fire({
+				  icon: 'error',
+				  title: 'Oops...Une erreur s\'est produite',
+				  text: 'Veuillez actualiser la page et ressaisir les informations!'
+				});
+				var btnSwalls = document.getElementsByClassName('swal2-confirm');
+				for(var i = 0; i<btnSwalls.length; i++)
+				{
+					btnSwalls[i].addEventListener('click', function(e){
+						e.preventDefault();
+						window.location = 'contact.php';
+						})
+				}
+			</script>";
+	}
+
 	}
  ?>
