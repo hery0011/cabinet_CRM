@@ -25,8 +25,8 @@
 		echo "<script type='text/javascript'>
         Swal.fire({
           icon: 'error',
-          title: 'Oops...',
-          text: 'veuillez contacter l \'administrateur du site!'
+          title: 'Oops...Une erreur s'est produite',
+          text: 'Veuillez actualiser la page et ressaisir les informations!'
         });
         var btnSwalls = document.getElementsByClassName('swal2-confirm');
         for(var i = 0; i<btnSwalls.length; i++)
