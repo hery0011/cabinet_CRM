@@ -1,10 +1,16 @@
 <?php 
 	include("setting_mail.php");
-	
+	try {
+
 	$objet = "Devis";
 	$mail->Subject = ("$email ($objet)");
 	$mail->Body = $affichage;
 
+	} catch (Exception $e) {
+		var_dump($e);die($mail->ErrorInfo);
+	    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+	}
+	
 	if ($mail->send()) {
 		echo "<script type='text/javascript'>
                Swal.fire(
