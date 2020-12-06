@@ -9,8 +9,29 @@
 
 	include("setting_mail.php");
 	
+	
+try {
+
+    //Server settings
+	$mail->isSMTP();
+	$mail->Host = "smtp.gmail.com";
+	$mail->SMTPAuth = true;
+	$mail->Username = "rasolonjatovohery0011@gmail.com";
+	$mail->Password = 'hery0011';
+	$mail->Port = 465;
+	$mail->SMTPSecure = "ssl";
+
+	//email setting
+	$mail->isHTML(true);
+	$mail->setFrom($email, $nom);
+	$mail->AddAddress("crmcac@crmcac.com");
 	$mail->Subject = ("$email ($objet)");
 	$mail->Body = $message;
+
+	} catch (Exception $e) {
+		var_dump($e);die();
+	    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+	}
 
 	if ($mail->send()) {
 		echo "<script type='text/javascript'>
