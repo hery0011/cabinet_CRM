@@ -2,6 +2,7 @@
 <html>
 <head>
   <title></title>
+  <meta charset="utf-8">
   <script type="text/javascript" src="js/sweetalert2.all.js"></script>
   <script type="text/javascript" src="js/sweetalert2.all.min.js"></script>
 </head>

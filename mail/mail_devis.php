@@ -10,6 +10,7 @@
 	$mail->Password = 'hery0011';
 	$mail->Port = 465;
 	$mail->SMTPSecure = "ssl";
+	
 
 	//email setting
 	$mail->isHTML(true);
