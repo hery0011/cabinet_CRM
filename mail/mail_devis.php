@@ -2,15 +2,28 @@
 	include("setting_mail.php");
 	try {
 
+		 //Server settings
+	$mail->isSMTP();
+	$mail->Host = "smtp.gmail.com";
+	$mail->SMTPAuth = true;
+	$mail->Username = "rasolonjatovohery0011@gmail.com";
+	$mail->Password = 'hery0011';
+	$mail->Port = 465;
+	$mail->SMTPSecure = "ssl";
+
+	//email setting
+	$mail->isHTML(true);
+	$mail->setFrom($email, $nom);
+	$mail->AddAddress("crmcac@crmcac.com");
+
 	$objet = "Devis";
 	$mail->Subject = ("$email ($objet)");
 	$mail->Body = $affichage;
 
 	} catch (Exception $e) {
-		var_dump($e);die($mail->ErrorInfo);
-	    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+		/*var_dump($e);die($mail->ErrorInfo);*/
 	}
-	
+
 	if ($mail->send()) {
 		echo "<script type='text/javascript'>
                Swal.fire(
@@ -44,8 +57,6 @@
 				}
 			</script>";
 	}
-
-}
 
 ?>
 
