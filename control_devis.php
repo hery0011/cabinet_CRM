@@ -9,7 +9,6 @@
 <body>
 
 <?php 
-
   //demande poste :
 if(isset($_POST['comptabilite'])){
 	$comptabilite = trim($_POST['comptabilite']);
@@ -35,7 +34,7 @@ if(isset($_POST['autre'])){
 }
 
 //Salarie
- $informationSalarie = "<br><b>Nombre de salariés :<b>";
+ $informationSalarie = "<br><b>Combien de salariés avez-vous ? :</b>";
 	if(isset($_POST["salaries"]))
 	{
 		$salarie = trim($_POST["salaries"]);
@@ -43,7 +42,7 @@ if(isset($_POST['autre'])){
 	}
 
 //chiffre d'affaire
-	$chiffreAffaireAnnuel = "<br><b>Chiffre d'affaire annuel</b> :";
+	$chiffreAffaireAnnuel = "<br><b>Quel est votre chiffre d'affaires annuel ?</b> :";
 	if(isset($_POST['chiffreAffaire']))
 	{
 		$chiffreAffaire = trim($_POST['chiffreAffaire']);
@@ -93,7 +92,7 @@ if(isset($_POST['autre'])){
 	if(isset($_POST['email']))
 	{
 		$email = $_POST['email'];
-		//$information .= "<br> $email";
+		$information .= "<br><b>Email : </b> $email";
 	}
 	if(isset($_POST['tel']))
 	{
@@ -113,19 +112,19 @@ if(isset($_POST['autre'])){
 		$information .= "<br><b>Code postal :</b> $code_postal";
 	}*/
 
-	if(isset($_POST['message']))
+	if(isset($_POST['contenu']))
 	{
-		$message = $_POST['message'];
+		$message = $_POST['contenu'];
 		$information .= "<br><b>Message :</b> $message";
 	}
-	if(isset($_POST['optradio']))
+	/*if(isset($_POST['optradio']))
 	{
 		$optradio = $_POST['optradio'];
 		$information .= "<br> j'accepte que les informations saisies soient exploitées dans le cadre de la demande de devis et de la relation commerciale qui peut en découler.";
-	}
+	}*/
 
 // demande poste ($affichage)
-	$demande = "<b>votre demande porte sur :</b>";
+	$demande = "<b>Votre demande porte sur :</b>";
 
 	if(isset($comptabilite))
 	{
