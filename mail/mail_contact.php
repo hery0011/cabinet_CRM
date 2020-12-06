@@ -16,8 +16,8 @@ try {
 	$mail->isSMTP();
 	$mail->Host = "smtp.gmail.com";
 	$mail->SMTPAuth = true;
-	$mail->Username = "harinjatovo.fetra@gmail.com";
-	$mail->Password = 'fetra0011';
+	$mail->Username = "rasolonjatovohery0011@gmail.com";
+	$mail->Password = 'hery0011';
 	$mail->Port = 465;
 	$mail->SMTPSecure = "ssl";
 
@@ -29,7 +29,7 @@ try {
 	$mail->Body = $message;
 
 	} catch (Exception $e) {
-		var_dump($e);die("error");
+		var_dump($e);die($mail->ErrorInfo);
 	    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 	}
 
