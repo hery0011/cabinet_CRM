@@ -71,7 +71,7 @@ if(isset($_POST['autre'])){
 	}*/
 
 //information personnel
-	$information ="<br><b>Information personnelles :</b> ";
+	$information ="<br><b>Informations personnelles :</b> ";
 	if(isset($_POST['nom'])){
 		$nom = $_POST['nom'];
 		$information .= "<br><b>Nom :</b> $nom";
