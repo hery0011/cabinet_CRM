@@ -9,6 +9,7 @@
 <body>
 
 <?php 
+/*var_dump($_POST);die();*/
   //demande poste :
 if(isset($_POST['comptabilite'])){
 	$comptabilite = trim($_POST['comptabilite']);
@@ -59,7 +60,9 @@ if(isset($_POST['autre'])){
 
 //forme juridique du société
 	if(isset($_POST['forme_juridique'])){
-		$forme_juridique = trim($_POST['forme_juridique']);
+		$forme_juridique = "<br><b>Quelle est la forme juridique de votre société ?</b> :";
+		$forme = trim($_POST['forme_juridique']);
+		$forme_juridique .= "<br> $forme";
 	}
 
 // Reconnaissance du CRM
@@ -115,7 +118,7 @@ if(isset($_POST['autre'])){
 	if(isset($_POST['contenu']))
 	{
 		$message = $_POST['contenu'];
-		$information .= "<br><b>Message :</b> $message";
+		$information .= "<br><br><b>Message :</b> $message";
 	}
 	/*if(isset($_POST['optradio']))
 	{
@@ -157,7 +160,7 @@ if(isset($_POST['autre'])){
 			$demande .= "<br> $autre";
 		}
 
-	$affichage = $information."<br><br>".$demande."<br>".$informationSalarie."<br>".$chiffreAffaireAnnuel;
+	$affichage = $information."<br><br>".$demande."<br>".$informationSalarie."<br>".$chiffreAffaireAnnuel."<br>".$forme_juridique;
 	include("mail/mail_devis.php");
 	
 ?>
