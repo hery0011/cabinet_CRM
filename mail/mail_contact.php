@@ -29,7 +29,7 @@ try {
 	$mail->Body = $message;
 
 	} catch (Exception $e) {
-		var_dump($e);die();
+		var_dump($e);die("error");
 	    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 	}
 
