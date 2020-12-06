@@ -63,6 +63,12 @@ mark{
 	background-color: black;
 	color: white;
 }
+.fixed {
+	position: fixed;
+	background: #fff;
+	z-index: 9;
+	box-shadow: 0 0 5px 3px rgba(0,0,0,.15);
+}
 .navbar-menu-item a {
 	padding: 8px 10px;
 	transition: all 300ms ease-in;
@@ -83,8 +89,6 @@ mark{
 }
 #head {
 	padding: 20px 0;
-	background: rgba(255, 255, 255, .5);
-	z-index: 9;
 	font-size: 15px;
 	height: 125px;
 	transition: height 1s ease-in-out;
@@ -238,7 +242,7 @@ a.log-btn:hover {
  	background-repeat: no-repeat;
  	background-size: cover;
  	background-position: center;
- 	height: 400px;
+ 	height: 525px;
  }
 
 .banner-home {
@@ -265,7 +269,7 @@ a.log-btn:hover {
 	text-align: left;
 }
 #banner .inner-banner .inner-banner-slogan {
-	padding-top: 17rem;
+	padding-top: 25rem;
 	max-width: 700px;
 	margin: auto;
 	position: relative;
@@ -689,6 +693,9 @@ a.log-btn:hover {
 	position: unset !important;
 	background-color: #fff;
 box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px 3px;
+}
+.body-shift {
+	padding-top: 125px;
 }
 #filter {
 	padding: 20px;
@@ -1188,9 +1195,6 @@ color: #fff;
 	.toggle-menu {
 		width: 85% !important;
 	}
-	#banner .inner-banner .inner-banner-slogan {
-		padding-top: 15rem !important;
-	}
 }
 @media only screen and (min-width: 576px ) {
 	.actus-content {
@@ -1247,6 +1251,9 @@ color: #fff;
 	.resp-login-btn {
 		display: none;
 	}
+	#banner .inner-banner .inner-banner-slogan {
+		padding-top: 25rem !important;
+	}
 }
 @media only screen and (min-width: 768px ) {
 	.resp_hidden .about-img {
@@ -1272,6 +1279,9 @@ color: #fff;
 @media only screen and (max-width: 991px ) {
 	#head {
 		position: unset;
+	}
+	#banner {
+		height: 400px;
 	}
 	.toggle-menu {
 		display: initial;
@@ -1331,6 +1341,16 @@ color: #fff;
 	}
 	.sign-in-btn {
 		display: none;
+	}
+	.fixed {
+		position: unset;
+		box-shadow: unset;
+	}
+	.body-shift {
+		padding-top: 0;
+	}
+	#banner .inner-banner .inner-banner-slogan {
+		padding-top: 17rem;
 	}
 }
 

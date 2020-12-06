@@ -19,7 +19,7 @@
 <body>
 
 	<!-- NAVBAR -->
-	<div class="container-fluid">
+	<div class="container-fluid fixed">
 		<div class="row">
 			<div class="col-md-12">
 				<header id="head" class="">
