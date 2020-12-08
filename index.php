@@ -213,7 +213,7 @@
 					 ?>
 					<div class="col-sm-12 col-md-12 col-lg-4">
 						<div class="actus-content">
-							<a href="actualite.php">
+							<a href="article.php?id=<?php echo $row['id_art'] ?>">
 								<div class="actus-img">
 								<img src="<?php echo $row['image_art'] ?>" width="100%" height="250px">
 								</div>

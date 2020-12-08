@@ -96,7 +96,7 @@
 
 								<?php 
 
-									$sql = "SELECT titre_art FROM article ORDER BY id_art ASC";
+									$sql = "SELECT * FROM article ORDER BY id_art ASC";
 									$result = mysqli_query($conn, $sql);
 									
 									if ($result->num_rows > 0) {
@@ -104,7 +104,7 @@
 								 ?>
 
 								
-					              	<li class="liste_article"><a href=""><?php echo $row['titre_art']; ?></a></li>
+					              	<li class="liste_article"><a href="article.php?id=<?php echo $row['id_art'] ?>"><?php echo $row['titre_art']; ?></a></li>
 					              	<?php 
 							              }
 							          }
