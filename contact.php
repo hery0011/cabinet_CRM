@@ -130,7 +130,7 @@
 									<div class="adress">
 										<ul>
 											<li><b>Raison sociale : </b>CRM COMPTABILITE, AUDIT & CONSEIL SARLU</li>
-											<li><b>Siège social : </b>Lot II M 92 Antsakaviro</li>
+											<li><b>Siège social : </b>Lot II M 92 Antsakaviro - Immeuble Redzone</li>
 											<li><b>Téléphone : </b>+ 261 34 65 459 75</li>
 										</ul>
 									</div>
@@ -191,7 +191,7 @@
 		                            <p>
 		                               CRM – Cabinet de Comptabilité, Audit & Conseil
 		                               <br>
-		                               <i class="fa fa-map-marker-alt"></i> Lot II M 92 Antsakaviro <br>
+		                               <i class="fa fa-map-marker-alt"></i> Lot II M 92 Antsakaviro - Immeuble Redzone<br>
 		                               <i class="fa fa-phone-alt"></i> <a target="_blank" href="+261 34 65 459 75">+261 34 65 459 75</a>
 		                            </p>
 		                            <div class="socail_links">

@@ -185,7 +185,7 @@
 		                            <p>
 		                               CRM – Cabinet de Comptabilité, Audit & Conseil
 		                               <br>
-		                               <i class="fa fa-map-marker-alt"></i> Lot II M 92 Antsakaviro <br>
+		                               <i class="fa fa-map-marker-alt"></i> Lot II M 92 Antsakaviro - Immeuble Redzone<br>
 		                               <i class="fa fa-phone-alt"></i> +261 34 65 459 75
 		                            </p>
 		                            <div class="socail_links">
