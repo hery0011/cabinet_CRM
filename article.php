@@ -190,10 +190,10 @@
 		                            </p>
 		                            <div class="socail_links">
 		                                <p>Nous suivre : </p>
-		                                <a target="_blank" href="https://www.facebook.com/CRMCAC.SARLU">
+		                                <a target="_blank" href="https://www.facebook.com/crmcacsarlu2020">
 		                                    <i class="fab fa-facebook-f"></i>
 		                                </a>
-		                                <a target="_blank" href="https://www.linkedin.com/in/crm-comptabilit%C3%A9-audit-conseil-805503115/">
+		                                <a target="_blank" href="https://www.linkedin.com/in/crmcacsarlu">
 		                                    <i class="fab fa-linkedin-in"></i>
 		                                </a>
 		                            </div>
